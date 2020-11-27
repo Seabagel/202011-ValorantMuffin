@@ -1,0 +1,54 @@
+{
+    "armor": ["Armor - None", "Armor - Light", "Armor - Heavy"],
+    "agent": [
+        "Controller - Brimstone",
+        "Controller - Viper",
+        "Controller - Omen",
+        "Sentinel - Killjoy",
+        "Sentinel - Cypher",
+        "Initiator - Sova",
+        "Sentinel - Sage",
+        "Duelist - Phoenix",
+        "Duelist - Jett",
+        "Duelist - Reyna",
+        "Duelist - Raze",
+        "Initiator - Breach",
+        "Initiator - Skye"
+    ],
+    "agent_thumb": [
+        "https://static.wikia.nocookie.net/valorant/images/3/37/Brimstone_artwork.png/revision/latest?cb=20200602020239",
+        "https://static.wikia.nocookie.net/valorant/images/9/91/Viper_artwork.png/revision/latest?cb=20200602020322",
+        "https://static.wikia.nocookie.net/valorant/images/0/06/Omen_artwork.png/revision/latest?cb=20200602020233",
+        "https://static.wikia.nocookie.net/valorant/images/8/8c/Killjoy.png/revision/latest?cb=20200729134445",
+        "https://static.wikia.nocookie.net/valorant/images/b/bb/Cypher_artwork.png/revision/latest?cb=20200602020329",
+        "https://static.wikia.nocookie.net/valorant/images/6/61/Sova_artwork.png/revision/latest?cb=20200602020314",
+        "https://static.wikia.nocookie.net/valorant/images/1/1e/Sage_artwork.png/revision/latest?cb=20200602020306",
+        "https://static.wikia.nocookie.net/valorant/images/f/fa/Phoenix_artwork.png/revision/latest?cb=20200602020246",
+        "https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png/revision/latest?cb=20200602020209",
+        "https://static.wikia.nocookie.net/valorant/images/4/41/Reyna_artwork.png/revision/latest?cb=20200602020340",
+        "https://static.wikia.nocookie.net/valorant/images/c/c4/Raze_artwork.png/revision/latest?cb=20200602020217",
+        "https://static.wikia.nocookie.net/valorant/images/5/5c/Breach_artwork.png/revision/latest?cb=20200602020225",
+        "https://static.wikia.nocookie.net/valorant/images/b/b9/Skye_Keyart_final.png/revision/latest?cb=20201013182515"
+    ],
+    "sidearms": [
+        "Side - classic",
+        "Side - shorty",
+        "Side - frenzy",
+        "Side - ghost",
+        "Side - sherrif"
+    ],
+    "primary": [
+        "SMG - stinger",
+        "SMG - spectre",
+        "Rifle - Bulldog",
+        "Rifle - Guardian",
+        "Rifle - Phantom",
+        "Rifle - Vandal",
+        "Shotgun - Bucky",
+        "Shotgun - Judge",
+        "LMG - Ares",
+        "LMG - Odin",
+        "Sniper - Marshal",
+        "Sniper - Operator"
+    ]
+}
