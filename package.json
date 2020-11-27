@@ -1,26 +1,26 @@
 {
-  "name": "202011-VirtualMuffin",
-  "version": "1.0.0",
-  "description": "Discord.js bot that gives Valorant challenges",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Seabagel/202011-VirtualMuffin.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Seabagel/202011-VirtualMuffin/issues"
-  },
-  "homepage": "https://github.com/Seabagel/202011-VirtualMuffin#readme",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "discord.js": "^12.5.1",
-    "node-fetch": "^2.6.1",
-    "request-promise": "^4.2.6"
-  }
+    "name": "202011-VirtualMuffin",
+    "version": "1.0.0",
+    "description": "Discord.js bot that gives Valorant challenges",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Seabagel/202011-VirtualMuffin.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "gpl-2.0",
+    "bugs": {
+        "url": "https://github.com/Seabagel/202011-VirtualMuffin/issues"
+    },
+    "homepage": "https://github.com/Seabagel/202011-VirtualMuffin#readme",
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.3",
+        "discord.js": "^12.5.1",
+        "node-fetch": "^2.6.1",
+        "request-promise": "^4.2.6"
+    }
 }
