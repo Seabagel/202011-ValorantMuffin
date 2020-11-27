@@ -56,9 +56,4 @@ const htttp_tools = {
     },
 };
 
-async function cock(url) {
-    let response = await fetch(url);
-    return await response.json();
-}
-
-module.exports = [text_tools, htttp_tools, message_tools, cock];
+module.exports = { text_tools, htttp_tools, message_tools, cock };
