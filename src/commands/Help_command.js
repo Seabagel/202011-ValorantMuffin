@@ -26,12 +26,12 @@ module.exports = {
                     {
                         name: `\`${prefix} roll\``,
                         value:
-                            "Rolls random Agents/Weapons,\n-6 random free/contract Valorant Agent\n-3 different primary weapons\n-2 different sidearms",
+                            "Rolls a set of *random* `Agents` and `Weapons` to use for the entire match\n-6 random free/contract Valorant Agent\n-3 different primary weapons\n-2 different sidearms",
                     },
                     {
                         name: `\`${prefix} brave\``,
                         value:
-                            "Need a **better weapon?** Be brave and roll for a `single round`. You *might* get a different weapon, but you'll have to use it until the round ends",
+                            "Need a *better* `weapon`? Be brave and **roll** for a `single round`. You *might* get a different weapon, but you'll have to use it **until the round ends**",
                     }
                 )
                 .addField(empty, message_tools.github(this.name))
