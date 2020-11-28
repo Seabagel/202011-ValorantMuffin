@@ -1,8 +1,8 @@
 // message_tools
-const { githubURL, errorMsg } = require("../json/templates.json");
+const { prefix, githubURL, errorMsg } = require("../json/Templates.json");
 const message_tools = {
     github(cmdName) {
-        return `**Command:** [pudding *-${cmdName}*](${githubURL})`;
+        return `**Command:** [${prefix} *-${cmdName}*](${githubURL})`;
     },
     async send(userInput, embedded, commandName) {
         try {
@@ -12,27 +12,27 @@ const message_tools = {
             console.log("Error: " + err);
         }
     },
-    catchError(userInput) {
-        console.log(errorMsg[0]);
+    catchError(userInput, error) {
         userInput.channel.send(errorMsg[0]);
         userInput.channel.send(errorMsg[1]);
+        console.log(error);
     },
 };
 
 // text_tools
 const text_tools = {
-    async capitalize(str) {
+    capitalize(str) {
         if (typeof str !== "string") return "";
         return str.charAt(0).toUpperCase() + str.toLowerCase().slice(1);
     },
-    async containsWord(message, wordList) {
+    containsWord(message, wordList) {
         for (let i = 0; i < wordList.length; i++) {
             if (message.includes(wordList[i])) {
                 return true;
             }
         }
     },
-    async getRandomInt(max) {
+    getRandomInt(max) {
         return Math.round(Math.random() * max);
     },
 };
@@ -56,4 +56,4 @@ const htttp_tools = {
     },
 };
 
-module.exports = { text_tools, htttp_tools, message_tools, cock };
+module.exports = { text_tools, htttp_tools, message_tools };

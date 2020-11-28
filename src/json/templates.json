@@ -5,10 +5,9 @@
         "icon_url": "https://github.githubassets.com/favicons/favicon.png",
         "text": "hosted on Github 👨‍💻 - made with love 💌"
     },
-    "githubURL": "https://github.com/Seabagel/discord.js-VirtualPudding",
+    "githubURL": "https://github.com/Seabagel/202011-VirtualMuffin",
     "errorMsg": [
         "There was an error trying to execute that command!",
         "type `muffin -help` for list of available commands"
-    ],
-    "thumbnails": ["https://playvalorant.com/static/favicon-32x32.940d18fe.png"]
+    ]
 }

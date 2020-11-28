@@ -1,0 +1,25 @@
+{
+    "armor": ["Armor - None", "Armor - Light", "Armor - Heavy"],
+    "sidearms": [
+        "Side - classic",
+        "Side - shorty",
+        "Side - frenzy",
+        "Side - ghost",
+        "Side - sherrif"
+    ],
+    "primary": [
+        "SMG - stinger",
+        "SMG - spectre",
+        "Rifle - Bulldog",
+        "Rifle - Guardian",
+        "Rifle - Phantom",
+        "Rifle - Vandal",
+        "Shotgun - Bucky",
+        "Shotgun - Judge",
+        "LMG - Ares",
+        "LMG - Odin",
+        "Sniper - Marshal",
+        "Sniper - Operator"
+    ],
+    "thumbnail": "https://playvalorant.com/static/favicon-32x32.940d18fe.png"
+}
