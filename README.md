@@ -11,9 +11,9 @@
 2. 🍰 **-choose**
    > `"muffin roll"` 
    - Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
-   - 3 free and 3 contract Valorant Agents
-   - 3 different primary weapons 
-   - 2 different sidearms
+   - 3 free and 3 contract Valorant `Agents`
+   - 3 different `primary` weapons 
+   - 2 different `sidearms` (pistols)
    - 
 
    > `"muffin brave"` 
