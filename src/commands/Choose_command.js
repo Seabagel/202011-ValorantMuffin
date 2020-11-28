@@ -12,24 +12,22 @@ const {
 const { weapons } = require("../json/WeaponDB.json");
 
 // Functions
-const { message_tools, text_tools } = require("../js/Tools");
+const { message_tools, math_tools } = require("../js/Tools");
 
 module.exports = {
     name: "choose",
     execute(userInput, args) {
         switch (args) {
             case "agent":
-                let index = text_tools.getRandomInt(agents.length);
+                let index = math_tools.randomIntEx(agents.length);
                 chooseAgent(userInput, agents[index]);
                 break;
             case "loadout":
-                let indexPrimary = text_tools.getRandomInt(
+                let indexPrimary = math_tools.randomIntEx(
                     weapons.primary.length
                 );
-                let indexArmor = text_tools.getRandomInt(weapons.armor.length);
-                let indexSide = text_tools.getRandomInt(
-                    weapons.sidearms.length
-                );
+                let indexArmor = math_tools.randomIntEx(weapons.armor.length);
+                let indexSide = math_tools.randomIntEx(weapons.sidearms.length);
                 chooseLoadout(userInput, indexPrimary, indexArmor, indexSide);
                 break;
             default:

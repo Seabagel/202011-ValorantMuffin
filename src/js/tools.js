@@ -32,8 +32,19 @@ const text_tools = {
             }
         }
     },
-    getRandomInt(max) {
+};
+
+const math_tools = {
+    randomIntEx(max1) {
+        let max = Math.abs(max1);
+        // This will never generate below zero or beyond array.length (undefined)
         return Math.floor(Math.random() * max);
+    },
+    randomIntInc(max2) {
+        let max = Math.abs(max2);
+        // This generates anywhere from zero to maximum (inclusive)
+        return Math.round(Math.random() * max);
+        return Math.floor(Math.random() * max + 1); // Another way to do it
     },
 };
 
@@ -56,4 +67,4 @@ const htttp_tools = {
     },
 };
 
-module.exports = { text_tools, htttp_tools, message_tools };
+module.exports = { text_tools, math_tools, htttp_tools, message_tools };
