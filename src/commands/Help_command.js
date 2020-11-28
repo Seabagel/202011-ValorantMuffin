@@ -26,7 +26,7 @@ module.exports = {
                     {
                         name: `\`${prefix} roll\``,
                         value:
-                            "Rolls a set of *random* `Agents` and `Weapons` to use for the entire match\n-6 random free/contract Valorant Agent\n-3 different primary weapons\n-2 different sidearms",
+                            "Rolls a set of *random* `Agents` and `Weapons` to use for the entire match\n    -6 random free/contract Valorant Agent\n    -3 different primary weapons\n    -2 different sidearms",
                     },
                     {
                         name: `\`${prefix} brave\``,

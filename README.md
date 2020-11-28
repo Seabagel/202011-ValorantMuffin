@@ -14,6 +14,7 @@
    - 3 free and 3 contract Valorant Agents
    - 3 different primary weapons 
    - 2 different sidearms
+   - 
 
    > `"muffin brave"` 
    - Need a *better* weapon? Be brave and **roll** for a `single round`. 
