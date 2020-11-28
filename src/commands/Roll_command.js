@@ -5,6 +5,7 @@ const { MessageEmbed } = require("discord.js");
 const { empty, footer } = require("../json/Templates.json");
 const { agents } = require("../json/AgentsDB.json");
 const { weapons } = require("../json/WeaponDB.json");
+const { urlDB } = require("../json/UrlDB.json");
 
 // Functions
 const { message_tools, math_tools } = require("../js/Tools");
@@ -18,8 +19,7 @@ module.exports = {
 
 const chooseLoadout = (userInput, thisName) => {
     try {
-        let consoleMessage = `Name username Rolling, timestamp@123123`;
-
+        // Make array of the values to process
         let valueArray = Array(4).fill("");
         let dbArray = [
             agents.freeAgents,
@@ -27,8 +27,9 @@ const chooseLoadout = (userInput, thisName) => {
             weapons.primary,
             weapons.sidearms,
         ];
-        let sizeArr = [4, 5, 5, 3];
+        let sizeArr = [3, 3, 3, 2];
 
+        // Create strings, random unique values from databse
         for (let i = 0; i < valueArray.length; i++) {
             math_tools
                 .randomArrayInt(dbArray[i].length, sizeArr[i], true)
@@ -41,36 +42,33 @@ const chooseLoadout = (userInput, thisName) => {
         const embedded = new MessageEmbed()
             .setColor("ff4655")
             .setAuthor(
-                "SneakyOdin (Bagel)",
-                "https://avatars0.githubusercontent.com/u/25069224?s=400&u=262929739f385e4bd20a9d85c86f06417c25c447&v=4",
-                agentsWikiLink
+                userInput.author.username,
+                userInput.author.displayAvatarURL({ dynamic: true })
             )
+            .setThumbnail(math_tools.randArrayValue(urlDB.agentsTopCrop))
             .setTitle("Agents:")
-            .setThumbnail(
-                "https://static.wikia.nocookie.net/valorant/images/0/06/Omen_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020233"
-            )
             .addFields(
                 {
-                    name: "1. Free Agents:",
+                    name: "3 free agents,",
                     value: valueArray[0],
                     inline: true,
                 },
                 {
-                    name: "2. Contract Agents:",
+                    name: "3 contract agents:",
                     value: valueArray[1],
                     inline: true,
                 },
                 {
-                    name: empty,
-                    value: "Weapons:",
+                    name: "Weapons",
+                    value: "Choose any of these:",
                 },
                 {
-                    name: "3. Primary Weapon:",
+                    name: "Primary,",
                     value: valueArray[2],
                     inline: true,
                 },
                 {
-                    name: "4. Sidearm:",
+                    name: "Sidearms:",
                     value: valueArray[3],
                     inline: true,
                 }
@@ -79,7 +77,7 @@ const chooseLoadout = (userInput, thisName) => {
             .setFooter(footer.text, footer.icon_url);
 
         // Send message
-        message_tools.send(userInput, embedded, consoleMessage);
+        message_tools.send(userInput, embedded, thisName);
     } catch (error) {
         message_tools.catchError(userInput, error);
     }

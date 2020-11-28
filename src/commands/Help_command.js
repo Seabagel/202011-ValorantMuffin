@@ -13,24 +13,20 @@ module.exports = {
         // Assemble embedded message
         try {
             const embedded = new MessageEmbed()
-                .setColor("#2ec556")
+                .setColor(0x0099ff)
                 .setTitle("Commands:")
                 .setDescription(`\`${prefix} <command>\` <arguments>`)
                 .setThumbnail(thumbnail)
                 .addFields(
                     {
-                        name: `\`${prefix} -help\``,
+                        name: `\`${prefix} help\``,
                         value:
                             "What you're seeing right now, click the Command: <link> to see the github link",
                     },
                     {
-                        name: `\`${prefix} -choose agent\``,
-                        value: "Picks a random Valorant Agent for you to play",
-                    },
-                    {
-                        name: `\`${prefix} -choose loadout\``,
+                        name: `\`${prefix} roll\``,
                         value:
-                            "picks a Primary weapon, Armor, and Sidearm to buy",
+                            "Rolls random Agents/Weapons,\n-10 random free/contract Valorant Agent\n-5 different primary weapons\n-3 different sidearms",
                     }
                 )
                 .addField(empty, message_tools.github(this.name))

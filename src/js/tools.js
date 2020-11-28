@@ -2,12 +2,16 @@
 const { prefix, githubURL, errorMsg } = require("../json/Templates.json");
 const message_tools = {
     github(cmdName) {
-        return `**Command:** [${prefix} *-${cmdName}*](${githubURL})`;
+        return `**Command:** [${prefix} ***-${cmdName}***](${githubURL})`;
     },
     async send(userInput, embedded, commandName) {
         try {
             userInput.channel.send(embedded);
-            console.log("Sending message... " + commandName);
+            console.log(
+                `Sending ${prefix} -${commandName} \<${
+                    userInput.author.username
+                }@${new Date().toUTCString()}\>`
+            );
         } catch (err) {
             console.log("Error: " + err);
         }
@@ -54,6 +58,9 @@ const math_tools = {
         }
         if (ascend) arr.sort((a, b) => a - b);
         return arr;
+    },
+    randArrayValue(array1) {
+        return array1[this.randomIntEx(array1.length)];
     },
 };
 
