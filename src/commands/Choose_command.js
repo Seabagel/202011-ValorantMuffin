@@ -7,8 +7,9 @@ const {
     agents,
     roleName,
     roleIcon,
-    wikiLink,
+    agentsWikiLink,
 } = require("../json/AgentsDB.json");
+const { weapons } = require("../json/WeaponDB.json");
 
 // Functions
 const { message_tools, text_tools } = require("../js/Tools");
@@ -19,16 +20,17 @@ module.exports = {
         switch (args) {
             case "agent":
                 let index = text_tools.getRandomInt(agents.length);
-                console.log("Length = " + agents.length);
-                console.log("Random index = " + index);
                 chooseAgent(userInput, agents[index]);
                 break;
             case "loadout":
-                message_tools.send(
-                    userInput,
-                    "`loadout` command isn't implemented yet",
-                    this.name
+                let indexPrimary = text_tools.getRandomInt(
+                    weapons.primary.length
                 );
+                let indexArmor = text_tools.getRandomInt(weapons.armor.length);
+                let indexSide = text_tools.getRandomInt(
+                    weapons.sidearms.length
+                );
+                chooseLoadout(userInput, indexPrimary, indexArmor, indexSide);
                 break;
             default:
                 console.log("Sent to Default");
@@ -39,37 +41,56 @@ module.exports = {
 };
 
 const chooseAgent = (userInput, agent) => {
-    let name = "choose agent";
-    let commandName = "choosing agent: " + agent.name;
-    // Assemble embedded message
-    const embedded = new MessageEmbed()
-        .setColor("ff4655")
-        .setAuthor(agent.name, roleIcon[agent.roleID], wikiLink)
-        .setDescription(roleName[agent.roleID])
-        .setImage(agent.picURL)
-        .setFooter(footer.text, footer.icon_url);
+    try {
+        let name = "choose agent";
+        let commandName = "choosing agent: " + agent.name;
+        // Assemble embedded message
+        const embedded = new MessageEmbed()
+            .setColor("ff4655")
+            .setAuthor(agent.name, roleIcon[agent.roleID], agentsWikiLink)
+            .setDescription(roleName[agent.roleID])
+            .setImage(agent.picURL)
+            .addField(empty, message_tools.github(name))
+            .setFooter(footer.text, footer.icon_url);
 
-    // Send message
-    message_tools.send(userInput, embedded, commandName);
+        // Send message
+        message_tools.send(userInput, embedded, commandName);
+    } catch (error) {
+        message_tools.catchError(userInput, error);
+    }
 };
 
-// const chooseAgent = (userInput, agent) => {
-//     let name = "choose agent";
-//     let commandName = "choosing agent: " + agent.name;
-//     // Assemble embedded message
-//     const embedded = new MessageEmbed()
-//         .setColor("ff4655")
-//         .setAuthor(agent.name, roleIcon[agent.roleID], wikiLink)
-//         .setDescription(roleName[agent.roleID])
-//         // .setThumbnail(agent.thumbURL)
-//         // .addFields({
-//         //     name: "test",
-//         //     value: "test",
-//         // })
-//         .setImage(agent.picURL)
-//         // .addField(empty, message_tools.github(name))
-//         .setFooter(footer.text, footer.icon_url);
+const chooseLoadout = (userInput, indexPrimary, indexArmor, indexSide) => {
+    try {
+        let name = "choose loadout";
+        let commandName = `Loadout: ${weapons.primary[indexPrimary]}, ${weapons.armor[indexArmor]}, ${weapons.sidearms[indexSide]}`;
+        // Assemble embedded message
+        const embedded = new MessageEmbed()
+            .setColor("ff4655")
+            // .setAuthor("Loadouts", weapons.icon, weapons.wikiLink)
+            .setThumbnail(weapons.sidearmsThumb[indexSide])
+            // Primary weapon
+            .setTitle("Primary:")
+            .setDescription(weapons.primary[indexPrimary])
+            .addFields(
+                {
+                    name: "Armor:",
+                    value: weapons.armor[indexArmor],
+                    inline: true,
+                },
+                {
+                    name: "Sidearm:",
+                    value: weapons.sidearms[indexSide],
+                    inline: true,
+                }
+            )
+            .setImage(weapons.primaryThumb[indexPrimary])
+            .addField(empty, message_tools.github(name))
+            .setFooter(footer.text, footer.icon_url);
 
-//     // Send message
-//     message_tools.send(userInput, embedded, commandName);
-// };
+        // Send message
+        message_tools.send(userInput, embedded, commandName);
+    } catch (error) {
+        message_tools.catchError(userInput, error);
+    }
+};
