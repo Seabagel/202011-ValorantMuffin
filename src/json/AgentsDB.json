@@ -1,77 +1,32 @@
 {
-    "agents": [
-        {
-            "name": "Brimstone",
-            "roleID": 0,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/3/37/Brimstone_artwork.png/revision/latest?cb=20200602020239"
-        },
-        {
-            "name": "Viper",
-            "roleID": 0,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/9/91/Viper_artwork.png/revision/latest?cb=20200602020322"
-        },
-        {
-            "name": "Omen",
-            "roleID": 0,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/0/06/Omen_artwork.png/revision/latest?cb=20200602020233"
-        },
-        {
-            "name": "Killjoy",
-            "roleID": 1,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/8/8c/Killjoy.png/revision/latest?cb=20200729134445"
-        },
-        {
-            "name": "Cypher",
-            "roleID": 1,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/b/bb/Cypher_artwork.png/revision/latest?cb=20200602020329"
-        },
-        {
-            "name": "Sova",
-            "roleID": 2,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/6/61/Sova_artwork.png/revision/latest?cb=20200602020314"
-        },
-        {
-            "name": "Sage",
-            "roleID": 1,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/1/1e/Sage_artwork.png/revision/latest?cb=20200602020306"
-        },
-        {
-            "name": "Phoenix",
-            "roleID": 3,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/f/fa/Phoenix_artwork.png/revision/latest?cb=20200602020246"
-        },
-        {
-            "name": "Jett",
-            "roleID": 3,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png/revision/latest?cb=20200602020209"
-        },
-        {
-            "name": "Reyna",
-            "roleID": 3,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/4/41/Reyna_artwork.png/revision/latest?cb=20200602020340"
-        },
-        {
-            "name": "Raze",
-            "roleID": 3,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/c/c4/Raze_artwork.png/revision/latest?cb=20200602020217"
-        },
-        {
-            "name": "Breach",
-            "roleID": 2,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/5/5c/Breach_artwork.png/revision/latest?cb=20200602020225"
-        },
-        {
-            "name": "Skye",
-            "roleID": 2,
-            "picURL": "https://static.wikia.nocookie.net/valorant/images/b/b9/Skye_Keyart_final.png/revision/latest?cb=20201013182515"
-        }
-    ],
-    "roleName": ["Controller", "Sentinel", "Initiator", "Duelist"],
-    "roleIcon": [
-        "https://static.wikia.nocookie.net/valorant/images/0/04/ControllerClassSymbol.png/revision/latest/scale-to-width-down/16?cb=20200408043911",
-        "https://static.wikia.nocookie.net/valorant/images/4/43/SentinelClassSymbol.png/revision/latest/scale-to-width-down/16?cb=20200408043934",
-        "https://static.wikia.nocookie.net/valorant/images/f/fd/DuelistClassSymbol.png/revision/latest/scale-to-width-down/16?cb=20200408043920",
-        "https://static.wikia.nocookie.net/valorant/images/f/fd/DuelistClassSymbol.png/revision/latest/?cb=20200408043920"
-    ],
-    "agentsWikiLink": "https://valorant.fandom.com/wiki/Agents"
+    "agents": {
+        "freeAgents": [
+            "Brimstone (Controller)",
+            "Jett (Duelist)",
+            "Phoenix (Duelist)",
+            "Sova (Initiator)",
+            "Sage (Sentinel)"
+        ],
+        "contractAgents": [
+            "Viper (Controller)",
+            "Omen (Controller)",
+            "Reyna (Duelist)",
+            "Raze (Duelist)",
+            "Breach (Initiator)",
+            "Skye (Initiator)",
+            "Cypher (Sentinel)",
+            "Killjoy (Sentinel)"
+        ]
+    },
+    "agentsWikiLink": "https://valorant.fandom.com/wiki/Agents",
+    "agentWideThumb": [
+        "https://static.wikia.nocookie.net/valorant/images/0/06/Omen_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020233",
+        "https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020209",
+        "https://static.wikia.nocookie.net/valorant/images/8/8c/Killjoy.png/revision/latest/top-crop/width/200/height/150?cb=20200729134445",
+        "https://static.wikia.nocookie.net/valorant/images/9/91/Viper_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020322",
+        "https://static.wikia.nocookie.net/valorant/images/b/bb/Cypher_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020329",
+        "https://static.wikia.nocookie.net/valorant/images/4/41/Reyna_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020340",
+        "https://static.wikia.nocookie.net/valorant/images/b/b9/Skye_Keyart_final.png/revision/latest/top-crop/width/200/height/150?cb=20201013182515",
+        "https://static.wikia.nocookie.net/valorant/images/c/c4/Raze_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020217"
+    ]
 }

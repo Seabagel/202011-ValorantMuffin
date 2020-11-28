@@ -46,6 +46,15 @@ const math_tools = {
         return Math.round(Math.random() * max);
         return Math.floor(Math.random() * max + 1); // Another way to do it
     },
+    randomArrayInt(max3, arrSize, ascend) {
+        let arr = [];
+        while (arr.length < arrSize) {
+            let r = this.randomIntEx(max3);
+            if (arr.indexOf(r) === -1) arr.push(r);
+        }
+        if (ascend) arr.sort((a, b) => a - b);
+        return arr;
+    },
 };
 
 // htttp_tools

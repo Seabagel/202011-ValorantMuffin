@@ -2,26 +2,26 @@
     "weapons": {
         "armor": ["Don't buy Armor", "Light Armor", "Heavy Armor"],
         "sidearms": ["Classic", "Shorty", "Frenzy", "Ghost", "Sherrif"],
+        "primary": [
+            "Stinger (SMG)",
+            "Spectre (SMG)",
+            "Bulldog (Rifle)",
+            "Guardian (Rifle)",
+            "Phantom (Rifle)",
+            "Vandal (Rifle)",
+            "Bucky (Shotgun)",
+            "Judge (Shotgun)",
+            "Ares (LMG)",
+            "Odin (LMG)",
+            "Marshal (Sniper)",
+            "Operator (Sniper)"
+        ],
         "sidearmsThumb": [
             "https://static.wikia.nocookie.net/valorant/images/5/57/Classic.png/revision/latest/scale-to-width-down/130?cb=20200404154125",
             "https://static.wikia.nocookie.net/valorant/images/7/77/Shorty.png/revision/latest/scale-to-width-down/170?cb=20200404154222",
             "https://static.wikia.nocookie.net/valorant/images/f/f1/Frenzy.png/revision/latest/scale-to-width-down/130?cb=20200404154617",
             "https://static.wikia.nocookie.net/valorant/images/a/ab/Ghost.png/revision/latest/scale-to-width-down/170?cb=20200404154731",
             "https://static.wikia.nocookie.net/valorant/images/3/3e/Sheriff.png/revision/latest/scale-to-width-down/170?cb=20200404154438"
-        ],
-        "primary": [
-            "SMG - Stinger",
-            "SMG - Spectre",
-            "Rifle - Bulldog",
-            "Rifle - Guardian",
-            "Rifle - Phantom",
-            "Rifle - Vandal",
-            "Shotgun - Bucky",
-            "Shotgun - Judge",
-            "LMG - Ares",
-            "LMG - Odin",
-            "Sniper - Marshal",
-            "Sniper - Operator"
         ],
         "primaryThumb": [
             "https://static.wikia.nocookie.net/valorant/images/b/b6/Stinger.png/revision/latest/scale-to-width-down/200?cb=20200404170849",
