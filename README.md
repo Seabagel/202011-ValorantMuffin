@@ -5,15 +5,19 @@
 > Type "muffin" <command> <sub_command> in your discord chatbox
 
 1. 🐙 **-help**
-   - `"muffin -help"` responds by giving a list of all available commands,
+   > `"muffin -help"` responds by giving a list of all available commands,
    - Every command will also give you a link to the github page, at the bottom of each response
 
 2. 🍰 **-choose**
-   > - `"muffin roll"` Rolls random Agents/Weapons, 
-   >    - 3 free and 3 contract Valorant Agents
-   >    - 3 different primary weapons 
-   >    - 2 different sidearms
-   > - `"muffin brave"` Need a *better* weapon? Be brave and **roll** for a `single round`. You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
+   > `"muffin roll"` 
+   - Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
+   - 3 free and 3 contract Valorant Agents
+   - 3 different primary weapons 
+   - 2 different sidearms
+
+   > `"muffin brave"` 
+   - Need a *better* weapon? Be brave and **roll** for a `single round`. 
+   - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
 
 3. ⏳ Coming soon: Re-roll that doesn't include duplicates
 
