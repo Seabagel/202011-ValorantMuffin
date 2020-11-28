@@ -19,16 +19,22 @@ module.exports = {
     execute(userInput, args) {
         switch (args) {
             case "agent":
-                let index = text_tools.getRandomInt(agents.length) - 1;
+                let index = text_tools.getRandomInt(0, agents.length);
                 chooseAgent(userInput, agents[index]);
                 break;
             case "loadout":
-                let indexPrimary =
-                    text_tools.getRandomInt(weapons.primary.length) - 1;
-                let indexArmor =
-                    text_tools.getRandomInt(weapons.armor.length) - 1;
-                let indexSide =
-                    text_tools.getRandomInt(weapons.sidearms.length) - 1;
+                let indexPrimary = text_tools.getRandomInt(
+                    0,
+                    weapons.primary.length
+                );
+                let indexArmor = text_tools.getRandomInt(
+                    0,
+                    weapons.armor.length
+                );
+                let indexSide = text_tools.getRandomInt(
+                    0,
+                    weapons.sidearms.length
+                );
                 chooseLoadout(userInput, indexPrimary, indexArmor, indexSide);
                 break;
             default:
@@ -48,7 +54,7 @@ const chooseAgent = (userInput, agent) => {
             .setAuthor(agent.name, roleIcon[agent.roleID], agentsWikiLink)
             .setDescription(roleName[agent.roleID])
             .setImage(agent.picURL)
-            .addField(empty, message_tools.github(name))
+            // .addField(empty, message_tools.github(name))
             .setFooter(footer.text, footer.icon_url);
         // Send message
         message_tools.send(userInput, embedded, commandName);
@@ -82,7 +88,7 @@ const chooseLoadout = (userInput, indexPrimary, indexArmor, indexSide) => {
                 }
             )
             .setImage(weapons.primaryThumb[indexPrimary])
-            .addField(empty, message_tools.github(name))
+            // .addField(empty, message_tools.github(name))
             .setFooter(footer.text, footer.icon_url);
         // Send message
         message_tools.send(userInput, embedded, commandName);
