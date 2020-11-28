@@ -1,4 +1,4 @@
-# 202011-VirtualMuffin
+# 202011-ValorantMuffin
 🤠🔫🍨🍦☕🥞 Discord.js bot that gives Valorant challenges
 
 ### Usage:
