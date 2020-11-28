@@ -32,8 +32,7 @@ module.exports = {
                 chooseLoadout(userInput, indexPrimary, indexArmor, indexSide);
                 break;
             default:
-                console.log("Sent to Default");
-                message_tools.send(userInput, "Sent to Default", this.name);
+                message_tools.catchError(userInput, "Switch Defaulted");
                 break;
         }
     },
