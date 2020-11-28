@@ -1,22 +1,22 @@
 {
-    "name": "202011-VirtualMuffin",
+    "name": "202011-ValorantMuffin",
     "version": "1.0.0",
     "description": "Discord.js bot that gives Valorant challenges",
     "main": "src/js/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node ."
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Seabagel/202011-VirtualMuffin.git"
+        "url": "git+https://github.com/Seabagel/202011-ValorantMuffin.git"
     },
     "keywords": [],
     "author": "",
     "license": "gpl-2.0",
     "bugs": {
-        "url": "https://github.com/Seabagel/202011-VirtualMuffin/issues"
+        "url": "https://github.com/Seabagel/202011-ValorantMuffin/issues"
     },
-    "homepage": "https://github.com/Seabagel/202011-VirtualMuffin#readme",
+    "homepage": "https://github.com/Seabagel/202011-ValorantMuffin#readme",
     "dependencies": {
         "cheerio": "^1.0.0-rc.3",
         "discord.js": "^12.5.1",
