@@ -32,10 +32,8 @@ const text_tools = {
             }
         }
     },
-    getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min) + min); //The maximum is inclusive and the minimum is inclusive
+    getRandomInt(max) {
+        return Math.floor(Math.random() * max);
     },
 };
 

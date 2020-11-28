@@ -19,20 +19,15 @@ module.exports = {
     execute(userInput, args) {
         switch (args) {
             case "agent":
-                let index = text_tools.getRandomInt(0, agents.length);
+                let index = text_tools.getRandomInt(agents.length);
                 chooseAgent(userInput, agents[index]);
                 break;
             case "loadout":
                 let indexPrimary = text_tools.getRandomInt(
-                    0,
                     weapons.primary.length
                 );
-                let indexArmor = text_tools.getRandomInt(
-                    0,
-                    weapons.armor.length
-                );
+                let indexArmor = text_tools.getRandomInt(weapons.armor.length);
                 let indexSide = text_tools.getRandomInt(
-                    0,
                     weapons.sidearms.length
                 );
                 chooseLoadout(userInput, indexPrimary, indexArmor, indexSide);
