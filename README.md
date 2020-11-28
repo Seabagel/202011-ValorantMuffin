@@ -8,14 +8,14 @@
    > `"muffin -help"` responds by giving a list of all available commands,
    - Every command will also give you a link to the github page, at the bottom of each response
 
-2. 🍰 **-roll**
+2. 🎲🥞 **-roll**
    > `"muffin roll"` 
    - Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
    - 3 free and 3 contract Valorant `Agents`
    - 3 different `primary` weapons 
    - 2 different `sidearms` (pistols)
 
-3. 🍰 **-brave**
+3. 🚒🔥 **-brave**
    > `"muffin brave"` 
    - Need a *better* weapon? Be brave and **roll** for a `single round`. 
    - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
