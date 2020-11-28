@@ -9,8 +9,8 @@
    - Every command will also give you a link to the github page, at the bottom of each response
 
 2. 🍰 **-choose**
-   - `"muffin -choose agent"` picks a random Valorant Agent for you to pick
-   - `"muffin -choose loadout"` picks a Primary, Armor, and Sidearm to buy
+   - `"muffin -choose agent"` picks a random Valorant Agent for you to play
+   - `"muffin -choose loadout"` picks a Primary weapon, Armor, and Sidearm to buy
 
 3. ⏳ Coming soon: Re-roll that doesn't include duplicates
 

@@ -2,7 +2,7 @@
 const { MessageEmbed } = require("discord.js");
 
 // JSON
-const { empty, footer, thumbnail } = require("../json/Templates.json");
+const { prefix, empty, footer, thumbnail } = require("../json/Templates.json");
 
 // Functions
 const { message_tools } = require("../js/Tools");
@@ -15,31 +15,31 @@ module.exports = {
             const embedded = new MessageEmbed()
                 .setColor(0x0099ff)
                 .setTitle("Commands:")
-                .setDescription("`pudding <command>` <arguments>")
+                .setDescription(`\`${prefix} <command>\` <arguments>`)
                 .setThumbnail(thumbnail)
                 .addFields(
                     {
-                        name: "`pudding -time` <name_of_country/city/state>",
-                        value:
-                            "Tells what time it is in **country/city/state**, plus a small info from wikipedia ",
-                    },
-                    {
-                        name: "`pudding -help`",
+                        name: `\`${prefix} -help\``,
                         value:
                             "What you're seeing right now, click the Command: <link> to see the github link",
                     },
                     {
-                        name: "`pudding -preach`",
-                        value: "Pudding reads a bible verse",
+                        name: `\`${prefix} -choose agent\``,
+                        value: "Picks a random Valorant Agent for you to play",
+                    },
+                    {
+                        name: `\`${prefix} -choose agent\``,
+                        value:
+                            "picks a Primary weapon, Armor, and Sidearm to buy",
                     }
                 )
                 .addField(empty, message_tools.github(this.name))
                 .setFooter(footer.text, footer.icon_url);
 
             // Send message
-            sendMessage(userInput, embedded, this.name);
+            message_tools.send(userInput, embedded, this.name);
         } catch (error) {
-            message_tools.catchError(userInput);
+            message_tools.catchError(userInput, error);
         }
     },
 };
