@@ -1,6 +1,6 @@
 {
     "weapons": {
-        "armor": ["Armor - No-buy", "Armor - Light", "Armor - Heavy"],
+        "armor": ["Don't buy Armor", "Light Armor", "Heavy Armor"],
         "sidearms": ["Classic", "Shorty", "Frenzy", "Ghost", "Sherrif"],
         "sidearmsThumb": [
             "https://static.wikia.nocookie.net/valorant/images/5/57/Classic.png/revision/latest/scale-to-width-down/130?cb=20200404154125",
