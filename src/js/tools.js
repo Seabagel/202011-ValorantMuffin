@@ -2,12 +2,16 @@
 const { prefix, githubURL, errorMsg } = require("../json/Templates.json");
 const message_tools = {
     github(cmdName) {
-        return `**Command:** [${prefix} *-${cmdName}*](${githubURL})`;
+        return `**Command:** [${prefix} ***-${cmdName}***](${githubURL})`;
     },
     async send(userInput, embedded, commandName) {
         try {
             userInput.channel.send(embedded);
-            console.log("Sending message... " + commandName);
+            console.log(
+                `Sending ${prefix} -${commandName} \<${
+                    userInput.author.username
+                }@${new Date().toUTCString()}\>`
+            );
         } catch (err) {
             console.log("Error: " + err);
         }
@@ -45,6 +49,18 @@ const math_tools = {
         // This generates anywhere from zero to maximum (inclusive)
         return Math.round(Math.random() * max);
         return Math.floor(Math.random() * max + 1); // Another way to do it
+    },
+    randomArrayInt(max3, arrSize, ascend) {
+        let arr = [];
+        while (arr.length < arrSize) {
+            let r = this.randomIntEx(max3);
+            if (arr.indexOf(r) === -1) arr.push(r);
+        }
+        if (ascend) arr.sort((a, b) => a - b);
+        return arr;
+    },
+    randArrayValue(array1) {
+        return array1[this.randomIntEx(array1.length)];
     },
 };
 

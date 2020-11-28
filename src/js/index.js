@@ -34,10 +34,9 @@ client.on("message", async (userInput) => {
 
     const args = message.slice(prefix.length).trim().split(" ");
     const cmnd = args.shift();
-    const arg = args[0];
 
     try {
-        client.commands.get(cmnd).execute(userInput, arg);
+        client.commands.get(cmnd).execute(userInput);
     } catch (error) {
         message_tools.catchError(userInput, error);
     }

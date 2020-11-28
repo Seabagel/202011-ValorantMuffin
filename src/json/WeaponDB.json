@@ -2,42 +2,19 @@
     "weapons": {
         "armor": ["Don't buy Armor", "Light Armor", "Heavy Armor"],
         "sidearms": ["Classic", "Shorty", "Frenzy", "Ghost", "Sherrif"],
-        "sidearmsThumb": [
-            "https://static.wikia.nocookie.net/valorant/images/5/57/Classic.png/revision/latest/scale-to-width-down/130?cb=20200404154125",
-            "https://static.wikia.nocookie.net/valorant/images/7/77/Shorty.png/revision/latest/scale-to-width-down/170?cb=20200404154222",
-            "https://static.wikia.nocookie.net/valorant/images/f/f1/Frenzy.png/revision/latest/scale-to-width-down/130?cb=20200404154617",
-            "https://static.wikia.nocookie.net/valorant/images/a/ab/Ghost.png/revision/latest/scale-to-width-down/170?cb=20200404154731",
-            "https://static.wikia.nocookie.net/valorant/images/3/3e/Sheriff.png/revision/latest/scale-to-width-down/170?cb=20200404154438"
-        ],
         "primary": [
-            "SMG - Stinger",
-            "SMG - Spectre",
-            "Rifle - Bulldog",
-            "Rifle - Guardian",
-            "Rifle - Phantom",
-            "Rifle - Vandal",
-            "Shotgun - Bucky",
-            "Shotgun - Judge",
-            "LMG - Ares",
-            "LMG - Odin",
-            "Sniper - Marshal",
-            "Sniper - Operator"
-        ],
-        "primaryThumb": [
-            "https://static.wikia.nocookie.net/valorant/images/b/b6/Stinger.png/revision/latest/scale-to-width-down/200?cb=20200404170849",
-            "https://static.wikia.nocookie.net/valorant/images/9/90/Spectre.png/revision/latest/scale-to-width-down/200?cb=20200404170922",
-            "https://static.wikia.nocookie.net/valorant/images/0/07/Bulldog.png/revision/latest/scale-to-width-down/200?cb=20200404171103",
-            "https://static.wikia.nocookie.net/valorant/images/f/fd/Guardian.png/revision/latest/scale-to-width-down/200?cb=20200404171224",
-            "https://static.wikia.nocookie.net/valorant/images/e/ec/Phantom.png/revision/latest/scale-to-width-down/200?cb=20200404171302",
-            "https://static.wikia.nocookie.net/valorant/images/5/56/Vandal.png/revision/latest/scale-to-width-down/200?cb=20200404171348",
-            "https://static.wikia.nocookie.net/valorant/images/e/eb/Bucky.png/revision/latest/scale-to-width-down/200?cb=20200404171832",
-            "https://static.wikia.nocookie.net/valorant/images/8/8a/Judge.png/revision/latest/scale-to-width-down/200?cb=20200404171858",
-            "https://static.wikia.nocookie.net/valorant/images/0/05/Ares.png/revision/latest/scale-to-width-down/200?cb=20200404171957",
-            "https://static.wikia.nocookie.net/valorant/images/5/58/Odin.png/revision/latest/scale-to-width-down/200?cb=20200404172022",
-            "https://static.wikia.nocookie.net/valorant/images/b/b9/Marshal.png/revision/latest/scale-to-width-down/200?cb=20200404172126",
-            "https://static.wikia.nocookie.net/valorant/images/1/17/Operator.png/revision/latest/scale-to-width-down/200?cb=20200404172152"
-        ],
-        "icon": "https://playvalorant.com/static/favicon-32x32.940d18fe.png",
-        "wikiLink": "https://valorant.fandom.com/wiki/Weapons"
+            "Stinger (SMG)",
+            "Spectre (SMG)",
+            "Bulldog (Rifle)",
+            "Guardian (Rifle)",
+            "Phantom (Rifle)",
+            "Vandal (Rifle)",
+            "Bucky (Shotgun)",
+            "Judge (Shotgun)",
+            "Ares (LMG)",
+            "Odin (LMG)",
+            "Marshal (Sniper)",
+            "Operator (Sniper)"
+        ]
     }
 }
