@@ -28,7 +28,7 @@ module.exports = {
                         value: "Picks a random Valorant Agent for you to play",
                     },
                     {
-                        name: `\`${prefix} -choose agent\``,
+                        name: `\`${prefix} -choose loadout\``,
                         value:
                             "picks a Primary weapon, Armor, and Sidearm to buy",
                     }
