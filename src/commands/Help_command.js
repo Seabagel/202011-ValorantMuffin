@@ -13,7 +13,7 @@ module.exports = {
         // Assemble embedded message
         try {
             const embedded = new MessageEmbed()
-                .setColor(0x0099ff)
+                .setColor("#2ec556")
                 .setTitle("Commands:")
                 .setDescription(`\`${prefix} <command>\` <arguments>`)
                 .setThumbnail(thumbnail)
