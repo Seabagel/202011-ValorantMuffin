@@ -1,10 +1,11 @@
 // message_tools
-const { prefix, githubURL, errorMsg } = require("../json/Templates.json");
 const message_tools = {
-    github(cmdName) {
+    async github(cmdName) {
+        const { prefix, githubURL } = await import("../json/Templates.json");
         return `**Command:** [${prefix} ***-${cmdName}***](${githubURL})`;
     },
     async send(userInput, embedded, commandName) {
+        const { prefix } = await import("../json/Templates.json");
         try {
             userInput.channel.send(embedded);
             console.log(
@@ -16,7 +17,8 @@ const message_tools = {
             console.log("Error: " + err);
         }
     },
-    catchError(userInput, error) {
+    async catchError(userInput, error) {
+        const { errorMsg } = await import("../json/Templates.json");
         userInput.channel.send(errorMsg[0]);
         userInput.channel.send(errorMsg[1]);
         console.log(error);
@@ -40,15 +42,15 @@ const text_tools = {
 
 const math_tools = {
     randomIntEx(max1) {
-        let max = Math.abs(max1);
+        let maxA = Math.abs(max1);
         // This will never generate below zero or beyond array.length (undefined)
-        return Math.floor(Math.random() * max);
+        return Math.floor(Math.random() * maxA);
     },
     randomIntInc(max2) {
-        let max = Math.abs(max2);
+        let maxB = Math.abs(max2);
         // This generates anywhere from zero to maximum (inclusive)
-        return Math.round(Math.random() * max);
-        return Math.floor(Math.random() * max + 1); // Another way to do it
+        return Math.round(Math.random() * maxB);
+        return Math.floor(Math.random() * maxB + 1); // Another way to do it
     },
     randomArrayInt(max3, arrSize, ascend) {
         let arr = [];
@@ -65,14 +67,14 @@ const math_tools = {
 };
 
 // htttp_tools
-const fetch = require("node-fetch");
-const requestPromise = require("request-promise");
 const htttp_tools = {
     async fetchAPI(url) {
-        let response = await fetch(url);
+        const nodefetch = await import("node-fetch");
+        let response = await nodefetch(url);
         return await response.json();
     },
     async requestPage(url) {
+        const requestPromise = await import("request-promise");
         return await requestPromise(url)
             .then((response) => {
                 return response;
