@@ -1,29 +1,21 @@
 // Dependencies
-const fs = require("fs");
 const { Client, Collection } = require("discord.js");
 
-// JSON
-const { token } = require("../../config/Config.json");
-
-// Functions
-const { message_tools } = require("./Tools");
-
-// Client
+// Ready message
 const client = new Client();
-client.commands = new Collection();
+client.once("ready", () => {
+    console.log("Ready!");
+});
 
 // Get commands dynamically
+client.commands = new Collection();
+const fs = require("fs");
 fs.readdirSync("./src/commands")
     .filter((file) => file.endsWith(".js"))
     .forEach((file) => {
         const command = require(`../commands/${file}`);
         client.commands.set(command.name, command);
     });
-
-// Ready message
-client.once("ready", () => {
-    console.log("Ready!");
-});
 
 // Activate on message event
 client.on("message", async (userInput) => {
@@ -39,8 +31,9 @@ client.on("message", async (userInput) => {
     try {
         client.commands.get(cmnd).execute(userInput);
     } catch (error) {
+        const { message_tools } = require("./Tools");
         message_tools.catchError(userInput, error);
     }
 });
 
-client.login(token);
+client.login(require("../../config/Config.json").token);
