@@ -1,5 +1,5 @@
 {
-    "agents_top_crop": [
+    "agentsCropped": [
         "https://static.wikia.nocookie.net/valorant/images/0/06/Omen_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020233",
         "https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020209",
         "https://static.wikia.nocookie.net/valorant/images/8/8c/Killjoy.png/revision/latest/top-crop/width/200/height/150?cb=20200729134445",
@@ -9,14 +9,14 @@
         "https://static.wikia.nocookie.net/valorant/images/b/b9/Skye_Keyart_final.png/revision/latest/top-crop/width/200/height/150?cb=20201013182515",
         "https://static.wikia.nocookie.net/valorant/images/c/c4/Raze_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020217"
     ],
-    "sidearms_thumb": [
+    "sidearmsIcon": [
         "https://static.wikia.nocookie.net/valorant/images/5/57/Classic.png/revision/latest/scale-to-width-down/130?cb=20200404154125",
         "https://static.wikia.nocookie.net/valorant/images/7/77/Shorty.png/revision/latest/scale-to-width-down/170?cb=20200404154222",
         "https://static.wikia.nocookie.net/valorant/images/f/f1/Frenzy.png/revision/latest/scale-to-width-down/130?cb=20200404154617",
         "https://static.wikia.nocookie.net/valorant/images/a/ab/Ghost.png/revision/latest/scale-to-width-down/170?cb=20200404154731",
         "https://static.wikia.nocookie.net/valorant/images/3/3e/Sheriff.png/revision/latest/scale-to-width-down/170?cb=20200404154438"
     ],
-    "primary_thumb": [
+    "primaryIcon": [
         "https://static.wikia.nocookie.net/valorant/images/b/b6/Stinger.png/revision/latest/scale-to-width-down/200?cb=20200404170849",
         "https://static.wikia.nocookie.net/valorant/images/9/90/Spectre.png/revision/latest/scale-to-width-down/200?cb=20200404170922",
         "https://static.wikia.nocookie.net/valorant/images/0/07/Bulldog.png/revision/latest/scale-to-width-down/200?cb=20200404171103",
@@ -30,7 +30,7 @@
         "https://static.wikia.nocookie.net/valorant/images/b/b9/Marshal.png/revision/latest/scale-to-width-down/200?cb=20200404172126",
         "https://static.wikia.nocookie.net/valorant/images/1/17/Operator.png/revision/latest/scale-to-width-down/200?cb=20200404172152"
     ],
-    "icon_github": "https://github.githubassets.com/favicons/favicon.png",
-    "thumb_help": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/263/service-dog_1f415-200d-1f9ba.png",
-    "wiki_favicon": "https://playvalorant.com/static/favicon-32x32.940d18fe.png"
+    "githubIcon": "https://github.githubassets.com/favicons/favicon.png",
+    "footerIcon": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/263/service-dog_1f415-200d-1f9ba.png",
+    "wikiFavicon": "https://playvalorant.com/static/favicon-32x32.940d18fe.png"
 }

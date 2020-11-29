@@ -1,15 +1,15 @@
 // message_tools
 const message_tools = {
     github(cmdName) {
-        const { json_file } = require("./JSON_helper");
-        return `**Command:** [${json_file.message.prefix} ***-${cmdName}***](${json_file.page_url.embed_github})`;
+        const { texts, websites } = require("./JSON_helper");
+        return `**Command:** [${texts.prefix} ***-${cmdName}***](${websites.embed_github})`;
     },
     send(userInput, embedded, commandName) {
-        const prefix = require("./JSON_helper").message.prefix;
+        const { texts } = require("./JSON_helper");
         try {
             userInput.channel.send(embedded);
             console.log(
-                `Sending ${prefix} -${commandName} \<${
+                `Sending ${texts.prefix} -${commandName} \<${
                     userInput.author.username
                 }@${new Date().toUTCString()}\>`
             );
@@ -18,9 +18,8 @@ const message_tools = {
         }
     },
     catchError(userInput, error) {
-        const errorMsg = require("./JSON_helper").message.errorMsg;
-        userInput.channel.send(errorMsg[0]);
-        userInput.channel.send(errorMsg[1]);
+        const { texts } = require("./JSON_helper");
+        userInput.channel.send(texts.errorMsg);
         console.log(error);
     },
 };

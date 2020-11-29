@@ -11,7 +11,7 @@ client.once("ready", () => {
 client.commands = new Collection();
 const fs = require("fs");
 fs.readdirSync("./src/js")
-    .filter((file) => file.startsWith("Command_"))
+    .filter((file) => file.startsWith("command_"))
     .forEach((file) => {
         const command = require(`./${file}`);
         client.commands.set(command.name, command);
@@ -19,7 +19,8 @@ fs.readdirSync("./src/js")
 
 // Activate on message event
 client.on("message", (userInput) => {
-    const prefix = require("./JSON_helper").message.prefix;
+    const { texts } = require("./JSON_helper");
+    const prefix = texts.prefix;
 
     let message = userInput.content.replace(/[^a-zA-Z ]/g, "").toLowerCase();
 

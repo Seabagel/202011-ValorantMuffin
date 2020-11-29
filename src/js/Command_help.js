@@ -5,20 +5,13 @@ module.exports = {
     },
 };
 
-const helpCommand = (userInput, args) => {
+const helpCommand = (userInput, thisName) => {
     // Dependencies
     const { MessageEmbed } = require("discord.js");
-
-    // JSON
-    const {
-        prefix,
-        empty,
-        footer,
-        thumbnail,
-    } = require("../json/Templates.json");
-
-    // Functions
     const { message_tools } = require("./tools");
+    // Data
+    const { texts, images } = require("./JSON_helper");
+    const prefix = texts.prefix;
 
     // Assemble embedded message
     try {
@@ -26,7 +19,7 @@ const helpCommand = (userInput, args) => {
             .setColor(0x0099ff)
             .setTitle("Commands:")
             .setDescription(`\`${prefix} <command>\` <arguments>`)
-            .setThumbnail(thumbnail)
+            .setThumbnail(images.helpThumbnail)
             .addFields(
                 {
                     name: `\`${prefix} help\``,
@@ -44,11 +37,11 @@ const helpCommand = (userInput, args) => {
                         "Need a *better* `weapon`? Be brave and **roll** for a `single round`. You *might* get a different weapon, but you'll have to use it **until the round ends**",
                 }
             )
-            .addField(empty, message_tools.github(this.name))
-            .setFooter(footer.text, footer.icon_url);
+            .addField(texts.empty, message_tools.github(thisName))
+            .setFooter(texts.footerText, images.githubIcon);
 
         // Send message
-        message_tools.send(userInput, embedded, this.name);
+        message_tools.send(userInput, embedded, thisName);
     } catch (error) {
         message_tools.catchError(userInput, error);
     }
