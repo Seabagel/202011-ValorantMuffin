@@ -1,12 +1,11 @@
 {
     "name": "202011-ValorantMuffin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Discord.js bot that gives Valorant challenges",
     "main": "src/js/index.js",
     "scripts": {
         "start": "node .",
-        "dev": "nodemon .",
-        "build": "tsc -p ."
+        "dev": "nodemon ."
     },
     "repository": {
         "type": "git",
