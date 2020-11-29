@@ -1,11 +1,11 @@
 // message_tools
 const message_tools = {
-    async github(cmdName) {
-        const { prefix, githubURL } = await import("../json/Templates.json");
+    github(cmdName) {
+        const { prefix, githubURL } = require("../json/Templates.json");
         return `**Command:** [${prefix} ***-${cmdName}***](${githubURL})`;
     },
-    async send(userInput, embedded, commandName) {
-        const { prefix } = await import("../json/Templates.json");
+    send(userInput, embedded, commandName) {
+        const { prefix } = require("../json/Templates.json");
         try {
             userInput.channel.send(embedded);
             console.log(
@@ -17,8 +17,8 @@ const message_tools = {
             console.log("Error: " + err);
         }
     },
-    async catchError(userInput, error) {
-        const { errorMsg } = await import("../json/Templates.json");
+    catchError(userInput, error) {
+        const { errorMsg } = require("../json/Templates.json");
         userInput.channel.send(errorMsg[0]);
         userInput.channel.send(errorMsg[1]);
         console.log(error);
@@ -69,12 +69,12 @@ const math_tools = {
 // htttp_tools
 const htttp_tools = {
     async fetchAPI(url) {
-        const nodefetch = await import("node-fetch");
+        const nodefetch = require("node-fetch");
         let response = await nodefetch(url);
         return await response.json();
     },
     async requestPage(url) {
-        const requestPromise = await import("request-promise");
+        const requestPromise = require("request-promise");
         return await requestPromise(url)
             .then((response) => {
                 return response;

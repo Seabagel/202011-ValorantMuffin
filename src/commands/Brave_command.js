@@ -1,15 +1,3 @@
-// Dependencies
-const { MessageEmbed } = require("discord.js");
-
-// JSON
-const { empty, footer } = require("../json/Templates.json");
-
-const { weapons } = require("../json/WeaponDB.json");
-const { urlDB } = require("../json/UrlDB.json");
-
-// Functions
-const { message_tools, math_tools } = require("../js/Tools");
-
 module.exports = {
     name: "brave",
     execute(userInput, args) {
@@ -18,6 +6,18 @@ module.exports = {
 };
 
 const chooseLoadout = (userInput, thisName) => {
+    // Dependencies
+    const { MessageEmbed } = require("discord.js");
+
+    // JSON
+    const { empty, footer } = require("../json/Templates.json");
+
+    const { weapons } = require("../json/WeaponDB.json");
+    const { urlDB } = require("../json/UrlDB.json");
+
+    // Functions
+    const { message_tools, math_tools } = require("../js/Tools");
+
     try {
         let indexPrimary = math_tools.randomIntEx(weapons.primary.length);
         let indexArmor = math_tools.randomIntEx(weapons.armor.length);

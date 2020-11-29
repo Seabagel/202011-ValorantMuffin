@@ -4,7 +4,6 @@ const { Client, Collection } = require("discord.js");
 
 // JSON
 const { token } = require("../../config/Config.json");
-const { prefix } = require("../json/Templates.json");
 
 // Functions
 const { message_tools } = require("./Tools");
@@ -28,6 +27,8 @@ client.once("ready", () => {
 
 // Activate on message event
 client.on("message", async (userInput) => {
+    const { prefix } = await require("../json/Templates.json");
+
     let message = userInput.content.replace(/[^a-zA-Z ]/g, "").toLowerCase();
 
     if (!message.startsWith(prefix) || userInput.author.bot) return;

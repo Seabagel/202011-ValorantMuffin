@@ -1,15 +1,3 @@
-// Dependencies
-const { MessageEmbed } = require("discord.js");
-
-// JSON
-const { empty, footer } = require("../json/Templates.json");
-const { agents } = require("../json/AgentsDB.json");
-const { weapons } = require("../json/WeaponDB.json");
-const { urlDB } = require("../json/UrlDB.json");
-
-// Functions
-const { message_tools, math_tools } = require("../js/Tools");
-
 module.exports = {
     name: "roll",
     execute(userInput) {
@@ -18,6 +6,18 @@ module.exports = {
 };
 
 const chooseLoadout = (userInput, thisName) => {
+    // Dependencies
+    const { MessageEmbed } = require("discord.js");
+
+    // JSON
+    const { empty, footer } = require("../json/Templates.json");
+    const { agents } = require("../json/AgentsDB.json");
+    const { weapons } = require("../json/WeaponDB.json");
+    const { urlDB } = require("../json/UrlDB.json");
+
+    // Functions
+    const { message_tools, math_tools } = require("../js/Tools");
+
     try {
         // Make array of the values to process
         let valueArray = Array(4).fill("");
