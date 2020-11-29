@@ -16,7 +16,7 @@ const chooseLoadout = (userInput, thisName) => {
     const { urlDB } = require("../json/UrlDB.json");
 
     // Functions
-    const { message_tools, math_tools } = require("../js/Tools");
+    const { message_tools, math_tools } = require("./Tools");
 
     try {
         // Make array of the values to process

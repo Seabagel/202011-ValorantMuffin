@@ -10,10 +10,10 @@ client.once("ready", () => {
 // Get commands dynamically
 client.commands = new Collection();
 const fs = require("fs");
-fs.readdirSync("./src/commands")
-    .filter((file) => file.endsWith(".js"))
+fs.readdirSync("./src/js")
+    .filter((file) => file.startsWith("Command_"))
     .forEach((file) => {
-        const command = require(`../commands/${file}`);
+        const command = require(`./${file}`);
         client.commands.set(command.name, command);
     });
 
