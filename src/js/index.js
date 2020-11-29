@@ -18,8 +18,8 @@ fs.readdirSync("./src/js")
     });
 
 // Activate on message event
-client.on("message", async (userInput) => {
-    const { prefix } = await require("../json/Templates.json");
+client.on("message", (userInput) => {
+    const prefix = require("./JSON_helper").message.prefix;
 
     let message = userInput.content.replace(/[^a-zA-Z ]/g, "").toLowerCase();
 
@@ -31,7 +31,7 @@ client.on("message", async (userInput) => {
     try {
         client.commands.get(cmnd).execute(userInput);
     } catch (error) {
-        const { message_tools } = require("./Tools");
+        const { message_tools } = require("./tools");
         message_tools.catchError(userInput, error);
     }
 });

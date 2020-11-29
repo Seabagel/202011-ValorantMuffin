@@ -18,7 +18,7 @@ const helpCommand = (userInput, args) => {
     } = require("../json/Templates.json");
 
     // Functions
-    const { message_tools } = require("./Tools");
+    const { message_tools } = require("./tools");
 
     // Assemble embedded message
     try {

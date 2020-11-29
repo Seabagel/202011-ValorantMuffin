@@ -1,0 +1,6 @@
+{
+    "prefix": "muffin",
+    "empty": "\u200b",
+    "footerText": "hosted on Github 👨‍💻 - made with love 💌",
+    "errorMsg": "There was an error trying to execute that command!\ntype `muffin -help` for list of available commands"
+}

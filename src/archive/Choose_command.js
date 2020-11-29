@@ -12,7 +12,7 @@ const {
 const { weapons } = require("../json/WeaponDB.json");
 
 // Functions
-const { message_tools, math_tools } = require("../js/Tools");
+const { message_tools, math_tools } = require("../js/tools");
 
 module.exports = {
     name: "choose",
