@@ -1,4 +1,23 @@
 {
+    "agents": {
+        "freeAgents": [
+            "Brimstone (Controller)",
+            "Jett (Duelist)",
+            "Phoenix (Duelist)",
+            "Sova (Initiator)",
+            "Sage (Sentinel)"
+        ],
+        "contractAgents": [
+            "Viper (Controller)",
+            "Omen (Controller)",
+            "Reyna (Duelist)",
+            "Raze (Duelist)",
+            "Breach (Initiator)",
+            "Skye (Initiator)",
+            "Cypher (Sentinel)",
+            "Killjoy (Sentinel)"
+        ]
+    },
     "agentsCropped": [
         "https://static.wikia.nocookie.net/valorant/images/0/06/Omen_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020233",
         "https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png/revision/latest/top-crop/width/200/height/150?cb=20200602020209",
@@ -32,5 +51,27 @@
     ],
     "githubIcon": "https://github.githubassets.com/favicons/favicon.png",
     "helpThumbnail": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/263/service-dog_1f415-200d-1f9ba.png",
-    "wikiFavicon": "https://playvalorant.com/static/favicon-32x32.940d18fe.png"
+    "wikiFavicon": "https://playvalorant.com/static/favicon-32x32.940d18fe.png",
+    "prefix": "muffin",
+    "empty": "​",
+    "footerText": "hosted on Github 👨‍💻 - made with love 💌",
+    "errorMsg":
+        "There was an error trying to execute that command!\n" +
+        "type `muffin -help` for list of available commands",
+    "armor": ["Don't buy Armor", "Light Armor", "Heavy Armor"],
+    "sidearms": ["Classic", "Shorty", "Frenzy", "Ghost", "Sherrif"],
+    "primary": [
+        "Stinger (SMG)",
+        "Spectre (SMG)",
+        "Bulldog (Rifle)",
+        "Guardian (Rifle)",
+        "Judge (Shotgun)",
+        "Ares (LMG)",
+        "Odin (LMG)",
+        "Marshal (Sniper)",
+        "Operator (Sniper)"
+    ],
+    "wikiWeapons": "https://valorant.fandom.com/wiki/Weapons",
+    "wikiAgents": "https://valorant.fandom.com/wiki/Agents",
+    "githubPage": "https://github.com/Seabagel/202011-VirtualMuffin"
 }

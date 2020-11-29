@@ -8,14 +8,9 @@ module.exports = {
 const chooseLoadout = (userInput, thisName) => {
     // Dependencies
     const { MessageEmbed } = require("discord.js");
-
-    // JSON
-    const message = require("./JSON_helper").message;
-    const image_url = require("./JSON_helper").image_url;
-    const weapons = require("./JSON_helper").page_urls;
-
-    // Functions
     const { message_tools, math_tools } = require("./tools");
+    // Data
+    const { images, texts, weapons } = require("./JSON_helper");
 
     try {
         let indexPrimary = math_tools.randomIntEx(weapons.primary.length);
@@ -25,7 +20,7 @@ const chooseLoadout = (userInput, thisName) => {
         // Assemble embedded message
         const embedded = new MessageEmbed()
             .setColor("ff4655")
-            .setThumbnail(image_url.sidearms_thumb[indexSide])
+            .setThumbnail(images.sidearmsIcon[indexSide])
             .setAuthor(
                 userInput.author.username,
                 userInput.author.displayAvatarURL({ dynamic: true })
@@ -46,9 +41,9 @@ const chooseLoadout = (userInput, thisName) => {
                     inline: true,
                 }
             )
-            .setImage(image_url.primary_thumb[indexPrimary])
-            .addField(empty, message_tools.github(thisName))
-            .setFooter(message.footerText, image_url.icon_github);
+            .setImage(images.primaryIcon[indexPrimary])
+            .addField(texts.empty, message_tools.github(thisName))
+            .setFooter(texts.footerText, images.githubIcon);
 
         // Send message
         message_tools.send(userInput, embedded, thisName);

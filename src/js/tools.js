@@ -2,7 +2,7 @@
 const message_tools = {
     github(cmdName) {
         const { texts, websites } = require("./JSON_helper");
-        return `**Command:** [${texts.prefix} ***-${cmdName}***](${websites.embed_github})`;
+        return `**Command:** [${texts.prefix} ***-${cmdName}***](${websites.githubPage})`;
     },
     send(userInput, embedded, commandName) {
         const { texts } = require("./JSON_helper");

@@ -8,15 +8,9 @@ module.exports = {
 const chooseLoadout = (userInput, thisName) => {
     // Dependencies
     const { MessageEmbed } = require("discord.js");
-
-    // JSON
-    const { empty, footer } = require("../json/Templates.json");
-    const { agents } = require("../json/AgentsDB.json");
-    const { weapons } = require("../json/WeaponDB.json");
-    const { urlDB } = require("../json/UrlDB.json");
-
-    // Functions
     const { message_tools, math_tools } = require("./tools");
+    // Data
+    const { texts, images, agents, weapons } = require("./JSON_helper");
 
     try {
         // Make array of the values to process
@@ -45,7 +39,7 @@ const chooseLoadout = (userInput, thisName) => {
                 userInput.author.username,
                 userInput.author.displayAvatarURL({ dynamic: true })
             )
-            .setThumbnail(math_tools.randArrayValue(urlDB.agentsTopCrop))
+            .setThumbnail(math_tools.randArrayValue(images.agentsCropped))
             .setTitle("Agents:")
             .addFields(
                 {
@@ -73,8 +67,8 @@ const chooseLoadout = (userInput, thisName) => {
                     inline: true,
                 }
             )
-            .addField(empty, message_tools.github(thisName))
-            .setFooter(footer.text, footer.icon_url);
+            .addField(texts.empty, message_tools.github(thisName))
+            .setFooter(texts.footerText, images.githubIcon);
 
         // Send message
         message_tools.send(userInput, embedded, thisName);
