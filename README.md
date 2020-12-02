@@ -1,4 +1,4 @@
-# MamaSlimesBOT
+# Mama-Slimes Discord.js bot
 ### 🍨🍦☕🥞🏔🌸⛩🎌🚅 
 A Discord.js Bot that does a different things
 
