@@ -1,5 +1,6 @@
 # MamaSlimesBOT
-🍨🍦☕🥞 A Discord.js that does a different things 🏔🌸⛩🎌🚅 
+🍨🍦☕🥞 A Discord.js Bot 
+that does a different things 🏔🌸⛩🎌🚅 
 
 ### Usage:
 > Type "prefix" <command> <sub_command> in your discord chatbox
