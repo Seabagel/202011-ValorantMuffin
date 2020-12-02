@@ -1,4 +1,3 @@
-// message_tools
 const message_tools = {
     github(cmdName) {
         const { texts, websites } = require("./JSON_helper");
