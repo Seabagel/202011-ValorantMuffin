@@ -10,10 +10,10 @@ client.once("ready", () => {
 // Get commands dynamically
 client.commands = new Collection();
 const fs = require("fs");
-fs.readdirSync("./src/js")
-    .filter((file) => file.startsWith("command_"))
+fs.readdirSync("./src/js/commands")
+    .filter((file) => file.endsWith(".js"))
     .forEach((file) => {
-        const command = require(`./${file}`);
+        const command = require(`./commands/${file}`);
         client.commands.set(command.name, command);
     });
 
@@ -30,10 +30,9 @@ client.on("message", (userInput) => {
     const cmnd = args.shift();
 
     try {
-        client.commands.get(cmnd).execute(userInput);
+        client.commands.get(cmnd).execute(userInput, args);
     } catch (error) {
-        const { message_tools } = require("./tools");
-        message_tools.catchError(userInput, error);
+        require("./tools").message_tools.catchError(userInput, error);
     }
 });
 

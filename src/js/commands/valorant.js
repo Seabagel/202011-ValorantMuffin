@@ -1,16 +1,16 @@
 module.exports = {
     name: "valorant",
     execute(userInput, args) {
-        helpCommand(userInput, this.name);
+        valCommand(userInput, this.name);
     },
 };
 
-const helpCommand = (userInput, thisName) => {
+const valCommand = (userInput, thisName) => {
     // Dependencies
     const { MessageEmbed } = require("discord.js");
-    const { message_tools } = require("./tools");
+    const { message_tools } = require("../tools");
     // Data
-    const { texts, images } = require("./JSON_helper");
+    const { texts, images } = require("../JSON_helper");
     const { valorantRole } = require("../../config/Config.json");
 
     // Assemble embedded message

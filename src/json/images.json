@@ -31,7 +31,14 @@
         "https://static.wikia.nocookie.net/valorant/images/1/17/Operator.png/revision/latest/scale-to-width-down/200?cb=20200404172152"
     ],
     "githubIcon": "https://github.githubassets.com/favicons/favicon.png",
-    "helpThumbnail": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/263/service-dog_1f415-200d-1f9ba.png",
+    "thumbnails": {
+        "helpCommand": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/263/service-dog_1f415-200d-1f9ba.png",
+        "timeDayCommand": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/sunrise_1f305.png",
+        "timeNightCommand": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/milky-way_1f30c.png",
+        "preachCommand": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/orthodox-cross_2626.png"
+    },
     "wikiFavicon": "https://playvalorant.com/static/favicon-32x32.940d18fe.png",
-    "valorantGif": "https://media1.tenor.com/images/6ddb6dd6ce730bd6d5226b31ef095d40/tenor.gif"
+    "valorantGif": "https://media1.tenor.com/images/6ddb6dd6ce730bd6d5226b31ef095d40/tenor.gif",
+    "puddingAvatar": "https://cdn.discordapp.com/app-icons/776188077075857479/4891990f80bdf1ff5d44826dc691eb3c.png?size=256",
+    "googleAvatar": "https://www.freepngimg.com/save/67060-play-photos-search-google-account-png-file-hd/200x200"
 }

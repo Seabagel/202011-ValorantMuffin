@@ -8,9 +8,9 @@ module.exports = {
 const chooseLoadout = (userInput, thisName) => {
     // Dependencies
     const { MessageEmbed } = require("discord.js");
-    const { message_tools, math_tools } = require("./tools");
+    const { message_tools, math_tools } = require("../tools");
     // Data
-    const { texts, images, agents, weapons } = require("./JSON_helper");
+    const { texts, images, agents, weapons } = require("../JSON_helper");
 
     try {
         // Make array of the values to process

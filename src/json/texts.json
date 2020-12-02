@@ -1,6 +1,6 @@
 {
-    "prefix": "muffin",
+    "prefix": "slime",
     "empty": "\u200b",
     "footerText": "hosted on Github 👨‍💻 - made with love 💌",
-    "errorMsg": "There was an error trying to execute that command!\ntype `muffin -help` for list of available commands"
+    "errorHelp": "Ara ara~ I had a problem runing that `command!`\nTyping `slime help` will give you the available `commands.`"
 }

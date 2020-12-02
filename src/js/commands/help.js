@@ -8,9 +8,9 @@ module.exports = {
 const helpCommand = (userInput, thisName) => {
     // Dependencies
     const { MessageEmbed } = require("discord.js");
-    const { message_tools } = require("./tools");
+    const { message_tools } = require("../tools");
     // Data
-    const { texts, images } = require("./JSON_helper");
+    const { texts, images } = require("../JSON_helper");
     const prefix = texts.prefix;
 
     // Assemble embedded message
@@ -25,6 +25,15 @@ const helpCommand = (userInput, thisName) => {
                     name: `\`${prefix} help\``,
                     value:
                         "What you're seeing right now, click the Command: <link> to see the github link",
+                },
+                {
+                    name: `\`${prefix} time\` <name_of_country/city/state>`,
+                    value:
+                        "Tells what time it is in **country/city/state**, plus a small info from wikipedia ",
+                },
+                {
+                    name: `\`${prefix} preach\``,
+                    value: "Pudding reads a bible verse",
                 },
                 {
                     name: `\`${prefix} roll\``,

@@ -14,8 +14,8 @@ const message_tools = {
     },
     catchError(userInput, error) {
         const { texts } = require("./JSON_helper");
+        userInput.channel.send(texts.errorHelp);
         console.log(error);
-        userInput.channel.send(texts.errorMsg);
     },
     pingRole(userInput, roleName) {
         userInput.channel.send(`<@&${roleName}>`);
@@ -63,8 +63,8 @@ const math_tools = {
     },
 };
 
-// htttp_tools
-const htttp_tools = {
+// http_tools
+const http_tools = {
     async fetchAPI(url) {
         const nodefetch = require("node-fetch");
         let response = await nodefetch(url);
@@ -82,4 +82,4 @@ const htttp_tools = {
     },
 };
 
-module.exports = { text_tools, math_tools, htttp_tools, message_tools };
+module.exports = { text_tools, math_tools, http_tools, message_tools };

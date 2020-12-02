@@ -1,16 +1,16 @@
 module.exports = {
     name: "brave",
     execute(userInput, args) {
-        chooseLoadout(userInput, this.name);
+        braveCommand(userInput, this.name);
     },
 };
 
-const chooseLoadout = (userInput, thisName) => {
+const braveCommand = (userInput, thisName) => {
     // Dependencies
     const { MessageEmbed } = require("discord.js");
-    const { message_tools, math_tools } = require("./tools");
+    const { message_tools, math_tools } = require("../tools");
     // Data
-    const { images, texts, weapons } = require("./JSON_helper");
+    const { images, texts, weapons } = require("../JSON_helper");
 
     try {
         let indexPrimary = math_tools.randomIntEx(weapons.primary.length);
