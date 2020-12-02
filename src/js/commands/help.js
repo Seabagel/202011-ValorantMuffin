@@ -11,7 +11,7 @@ const helpCommand = (userInput, thisName) => {
     const { message_tools } = require("../tools");
     // Data
     const { texts, images } = require("../JSON_helper");
-    const { prefix } = require("../../config/prefix.json");
+    const { prefix } = require("../../../config/prefix.json");
 
     // Assemble embedded message
     try {
