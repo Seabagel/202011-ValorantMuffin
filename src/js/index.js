@@ -37,4 +37,4 @@ client.on("message", (userInput) => {
     }
 });
 
-client.login(require("../../config/Config.json").token);
+client.login(require("../../config/config.json").token);

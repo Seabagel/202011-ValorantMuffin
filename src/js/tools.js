@@ -4,23 +4,21 @@ const message_tools = {
         const { texts, websites } = require("./JSON_helper");
         return `**Command:** [${texts.prefix} ***-${cmdName}***](${websites.githubPage})`;
     },
-    send(userInput, embedded, commandName) {
+    logCommand(userInput, commandName) {
         const { texts } = require("./JSON_helper");
-        try {
-            userInput.channel.send(embedded);
-            console.log(
-                `Sending ${texts.prefix} -${commandName} \<${
-                    userInput.author.username
-                }@${new Date().toUTCString()}\>`
-            );
-        } catch (err) {
-            console.log("Error: " + err);
-        }
+        console.log(
+            `Sending ${texts.prefix} -${commandName} \<${
+                userInput.author.username
+            }@${new Date().toUTCString()}\>`
+        );
     },
     catchError(userInput, error) {
         const { texts } = require("./JSON_helper");
         userInput.channel.send(texts.errorMsg);
         console.log(error);
+    },
+    pingRole(userInput, roleName) {
+        userInput.channel.send(`<@&${roleName}>`);
     },
 };
 
