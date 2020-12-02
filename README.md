@@ -5,10 +5,10 @@ that does a different things 🏔🌸⛩🎌🚅
 ## Features:
 - **Case *inSenSiTIVE***
 - 🖥⌨ Gives the link to Github source code (aka this page)
-- 💂‍♂️🙏 Gives Valorant "Bravery" challenges
-- ⏳✔ Implemented: Re-roll that doesn't include duplicates
+- 💂‍♂️🙏 Gives Valorant Bravery challenges
+   - ⏳✔ Re-roll that doesn't include duplicates
 - 🍞🙏 Recite bible verses
-- 📆⌚ Tells you time and date, based on country
+- 📆⌚ Tells you time and date, based on country/city/state
 
 ### Usage:
 > Type "prefix" <command> <sub_command> in your discord chatbox
@@ -28,7 +28,7 @@ that does a different things 🏔🌸⛩🎌🚅
 > `"prefix preach" <name_of_country/city/state>`
 - sends a random bible verse, plus the bookname, chapter, and number
 
-## 👮‍♂️💂‍♂️ Valorant Challenges
+## 👮‍♂️💂‍♂️ Valorant Bravery Challenge
 #### 🎲🥞 **-roll** 
 > `"prefix roll"` 
 - Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
