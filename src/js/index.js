@@ -5,6 +5,7 @@ const { Client, Collection } = require("discord.js");
 const client = new Client();
 client.once("ready", () => {
     console.log("Ready!");
+    client.user.setActivity("mama -commands <args?", { type: "LISTENING" });
 });
 
 // Get commands dynamically
