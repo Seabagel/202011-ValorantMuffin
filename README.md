@@ -1,6 +1,6 @@
 # MamaSlimesBOT
-🍨🍦☕🥞 A Discord.js Bot 
-that does a different things 🏔🌸⛩🎌🚅 
+#### 🍨🍦☕🥞 A Discord.js Bot 
+#### that does a different things 🏔🌸⛩🎌🚅 
 
 ## Features:
 - **Case *inSenSiTIVE***
