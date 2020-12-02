@@ -2,7 +2,7 @@
 #### 🍨🍦☕🥞🏔🌸⛩🎌🚅 
 A Discord.js Bot that does a different things
 
-## Features:
+### Features:
 - **Case *inSenSiTIVE***
 - 🖥⌨ Gives the link to Github source code (aka this page)
 - 💂‍♂️🙏 Gives Valorant Bravery challenges
@@ -14,11 +14,11 @@ A Discord.js Bot that does a different things
 > Type "prefix" <command> <sub_command> in your discord chatbox
 
 ## General Commands
-### 🐙 **-help**
+#### 🐙 **-help**
 > `"prefix -help"` responds by giving a list of all available commands,
 - Every command will also give you a link to the github page, at the bottom of each response
 
-### 📆 **-time**
+#### 📆 **-time**
 > `"prefix time" <name_of_country/city/state>`
 - "pudding -time Japan" gives you the time in Japan's capital city, Tokyo
 - "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
