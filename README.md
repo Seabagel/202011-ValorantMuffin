@@ -2,43 +2,43 @@
 ### 🍨🍦☕🥞🏔🌸⛩🎌🚅 
 A Discord.js Bot that does a different things
 
-## Features:
-- **Case *inSenSiTIVE***
-- 🖥⌨ Gives the link to Github source code (aka this page)
-- 💂‍♂️🙏 Gives Valorant Bravery challenges
+1. ## Features:
+   - **Case *inSenSiTIVE***
+   - 🖥⌨ Gives the link to Github source code (aka this page)
+   - 💂‍♂️🙏 Gives Valorant Bravery challenges
    - ⏳✔ Re-roll that doesn't include duplicates
-- 🍞🙏 Recite bible verses
-- 📆⌚ Tells you time and date, based on country/city/state
+   - 🍞🙏 Recite bible verses
+   - 📆⌚ Tells you time and date, based on country/city/state
 
-### Usage:
-> Type "prefix" <command> <sub_command> in your discord chatbox
+   2. ### Usage:
+   > Type "prefix" <command> <sub_command> in your discord chatbox
 
-## General Commands
-### 🐙 **-help**
-> `"prefix -help"` responds by giving a list of all available commands,
-- Every command will also give you a link to the github page, at the bottom of each response
+1. ## General Commands
+   1. ### 🐙 **-help**
+   > `"prefix -help"` responds by giving a list of all available commands,
+   - Every command will also give you a link to the github page, at the bottom of each response
 
-### 📆 **-time**
-> `"prefix time" <name_of_country/city/state>`
-- "pudding -time Japan" gives you the time in Japan's capital city, Tokyo
-- "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
-- "pudding -time Iowa" gives you the time in Iowa's capital city
+   1. ### 📆 **-time**
+   > `"prefix time" <name_of_country/city/state>`
+   - "pudding -time Japan" gives you the time in Japan's capital city, Tokyo
+   - "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
+   - "pudding -time Iowa" gives you the time in Iowa's capital city
 
-### ☦ **-preach**
-> `"prefix preach" <name_of_country/city/state>`
-- sends a random bible verse, plus the bookname, chapter, and number
+   1. ### ☦ **-preach**
+   > `"prefix preach" <name_of_country/city/state>`
+   - sends a random bible verse, plus the bookname, chapter, and number
 
-## 👮‍♂️💂‍♂️ Valorant Bravery Commands
-### 🎲🥞 **-roll** 
-> `"prefix roll"` 
-- Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
-- 3 free and 3 contract Valorant `Agents`
-- 3 different `primary` weapons 
-- 2 different `sidearms` (pistols)
-### 🚒🔥 **-brave**
-> `"prefix brave"` 
-- Need a *better* weapon? Be brave and **roll** for a `single round`. 
-- You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
+1. ## 👮‍♂️💂‍♂️ Valorant Bravery Commands
+   1. ### 🎲🥞 **-roll** 
+   > `"prefix roll"` 
+   - Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
+   - 3 free and 3 contract Valorant `Agents`
+   - 3 different `primary` weapons 
+   - 2 different `sidearms` (pistols)
+   1. ### 🚒🔥 **-brave**
+   > `"prefix brave"` 
+   - Need a *better* weapon? Be brave and **roll** for a `single round`. 
+   - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
 
 # How to install:
 1. Install npm on your computer from [Node.JS](https://nodejs.org/en/)
