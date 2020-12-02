@@ -14,8 +14,8 @@ const message_tools = {
     },
     catchError(userInput, error) {
         const { texts } = require("./JSON_helper");
-        userInput.channel.send(texts.errorMsg);
         console.log(error);
+        userInput.channel.send(texts.errorMsg);
     },
     pingRole(userInput, roleName) {
         userInput.channel.send(`<@&${roleName}>`);
