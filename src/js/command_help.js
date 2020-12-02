@@ -41,12 +41,8 @@ const helpCommand = (userInput, thisName) => {
             .setFooter(texts.footerText, images.githubIcon);
 
         // Send message
-<<<<<<< HEAD
-        message_tools.send(userInput, embedded, thisName);
-=======
         userInput.channel.send(embedded);
         message_tools.logCommand(userInput, thisName);
->>>>>>> 1.0.3-pants
     } catch (error) {
         message_tools.catchError(userInput, error);
     }
