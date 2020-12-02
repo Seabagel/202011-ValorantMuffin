@@ -1,0 +1,19 @@
+{
+    "freeAgents": [
+        "Brimstone (Controller)",
+        "Jett (Duelist)",
+        "Phoenix (Duelist)",
+        "Sova (Initiator)",
+        "Sage (Sentinel)"
+    ],
+    "contractAgents": [
+        "Viper (Controller)",
+        "Omen (Controller)",
+        "Reyna (Duelist)",
+        "Raze (Duelist)",
+        "Breach (Initiator)",
+        "Skye (Initiator)",
+        "Cypher (Sentinel)",
+        "Killjoy (Sentinel)"
+    ]
+}
