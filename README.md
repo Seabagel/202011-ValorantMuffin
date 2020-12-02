@@ -5,21 +5,10 @@ that does a different things 🏔🌸⛩🎌🚅
 ### Usage:
 > Type "prefix" <command> <sub_command> in your discord chatbox
 
-#### 🐙 **-help**
+## General Commands
+### 🐙 **-help**
 > `"prefix -help"` responds by giving a list of all available commands,
 - Every command will also give you a link to the github page, at the bottom of each response
-
-## VALORANT CHALLENGES
-### 🎲🥞 **-roll** 
-> `"prefix roll"` 
-- Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
-- 3 free and 3 contract Valorant `Agents`
-- 3 different `primary` weapons 
-- 2 different `sidearms` (pistols)
-### 🚒🔥 **-brave**
-> `"prefix brave"` 
-- Need a *better* weapon? Be brave and **roll** for a `single round`. 
-- You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
 
 ### 📆 **-time**
 > `"prefix time" <name_of_country/city/state>`
@@ -30,6 +19,18 @@ that does a different things 🏔🌸⛩🎌🚅
 ### ☦ **-preach**
 > `"prefix preach" <name_of_country/city/state>`
 - sends a random bible verse, plus the bookname, chapter, and number
+
+### Valorant Challenges
+#### 🎲🥞 **-roll** 
+> `"prefix roll"` 
+- Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
+- 3 free and 3 contract Valorant `Agents`
+- 3 different `primary` weapons 
+- 2 different `sidearms` (pistols)
+#### 🚒🔥 **-brave**
+> `"prefix brave"` 
+- Need a *better* weapon? Be brave and **roll** for a `single round`. 
+- You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
 
 ## Features:
 - **Case *inSenSiTIVE***
