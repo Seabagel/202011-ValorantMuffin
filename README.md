@@ -1,31 +1,42 @@
-# 202011-ValorantMuffin
-🤠🔫🍨🍦☕🥞 Discord.js bot that gives Valorant challenges
+# MamaSlimesBOT
+🍨🍦☕🥞 A Discord.js that does a different things 🏔🌸⛩🎌🚅 
 
 ### Usage:
-> Type "muffin" <command> <sub_command> in your discord chatbox
+> Type "prefix" <command> <sub_command> in your discord chatbox
 
 1. 🐙 **-help**
-   > `"muffin -help"` responds by giving a list of all available commands,
+   > `"prefix -help"` responds by giving a list of all available commands,
    - Every command will also give you a link to the github page, at the bottom of each response
 
 2. 🎲🥞 **-roll**
-   > `"muffin roll"` 
+   > `"prefix roll"` 
    - Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
    - 3 free and 3 contract Valorant `Agents`
    - 3 different `primary` weapons 
    - 2 different `sidearms` (pistols)
 
 3. 🚒🔥 **-brave**
-   > `"muffin brave"` 
+   > `"prefix brave"` 
    - Need a *better* weapon? Be brave and **roll** for a `single round`. 
    - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
 
+4. 📆 **-time**
+   > `"prefix time" <name_of_country/city/state>`
+   - "pudding -time Japan" gives you the time in Japan's capital city, Tokyo
+   - "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
+   - "pudding -time Iowa" gives you the time in Iowa's capital city
+
+5. ☦ **-preach**
+   > `"prefix preach" <name_of_country/city/state>`
+   - sends a random bible verse, plus the bookname, chapter, and number
 
 ## Features:
-- [x] **Case *inSenSiTIVE***
-- [x] 🖥⌨ Gives the link to Github source code (aka this page)
-- [x] 💂‍♂️🙏 Gives Valorant "Bravery" challenges
-- [x] ⏳✔ Implemented: Re-roll that doesn't include duplicates
+- **Case *inSenSiTIVE***
+- 🖥⌨ Gives the link to Github source code (aka this page)
+- 💂‍♂️🙏 Gives Valorant "Bravery" challenges
+- ⏳✔ Implemented: Re-roll that doesn't include duplicates
+- 🍞🙏 Recite bible verses
+- 📆⌚ Tells you time and date, based on country
 
 # How to install:
 1. Install npm on your computer from [Node.JS](https://nodejs.org/en/)
