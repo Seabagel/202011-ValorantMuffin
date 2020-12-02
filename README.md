@@ -1,12 +1,6 @@
 # 202011-ValorantMuffin
 🤠🔫🍨🍦☕🥞 Discord.js bot that gives Valorant challenges
 
-## TODO:
-- [ ] Fix `muffin -valorant` command, it's not working
-  - [ ] Send the ping ***outside*** the embedded
-  - [ ] Add usage in the `README`
-  - [ ] Add usage in the `help` command
-
 ### Usage:
 > Type "muffin" <command> <sub_command> in your discord chatbox
 
