@@ -20,7 +20,7 @@ that does a different things 🏔🌸⛩🎌🚅
 > `"prefix preach" <name_of_country/city/state>`
 - sends a random bible verse, plus the bookname, chapter, and number
 
-### 👮‍♂️💂‍♂️ Valorant Challenges
+## 👮‍♂️💂‍♂️ Valorant Challenges
 #### 🎲🥞 **-roll** 
 > `"prefix roll"` 
 - Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
