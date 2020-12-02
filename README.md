@@ -2,7 +2,7 @@
 ### 🍨🍦☕🥞🏔🌸⛩🎌🚅 
 A Discord.js Bot that does a different things
 
-### Features:
+## Features:
 - **Case *inSenSiTIVE***
 - 🖥⌨ Gives the link to Github source code (aka this page)
 - 💂‍♂️🙏 Gives Valorant Bravery challenges
