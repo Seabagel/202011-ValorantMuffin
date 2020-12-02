@@ -97,10 +97,7 @@ const timeCommand = async (userInput, args, thisName) => {
 
             // Send message
             userInput.channel.send(embedded);
-            message_tools.logCommand(
-                userInput,
-                `${thisName} <place/country/state/city>`
-            );
+            message_tools.logCommand(userInput, thisName);
         });
     } catch (error) {
         message_tools.catchError(userInput, error);

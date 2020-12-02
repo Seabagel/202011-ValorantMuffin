@@ -19,8 +19,7 @@ fs.readdirSync("./src/js/commands")
 
 // Activate on message event
 client.on("message", (userInput) => {
-    const { texts } = require("./JSON_helper");
-    const prefix = texts.prefix;
+    const { prefix } = require("../../config/prefix.json");
 
     let message = userInput.content.replace(/[^a-zA-Z ]/g, "").toLowerCase();
 

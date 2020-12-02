@@ -1,13 +1,12 @@
 // message_tools
 const message_tools = {
     github(cmdName) {
-        const { texts, websites } = require("./JSON_helper");
-        return `**Command:** [${texts.prefix} ***-${cmdName}***](${websites.githubPage})`;
+        const { websites } = require("./JSON_helper");
+        return `**Command:** [***-${cmdName}***](${websites.githubPage})`;
     },
     logCommand(userInput, commandName) {
-        const { texts } = require("./JSON_helper");
         console.log(
-            `Sending ${texts.prefix} -${commandName} \<${
+            `[${commandName}] \<${
                 userInput.author.username
             }@${new Date().toUTCString()}\>`
         );
