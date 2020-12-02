@@ -21,7 +21,6 @@ const message_tools = {
     },
 };
 
-// text_tools
 const text_tools = {
     capitalize(str) {
         if (typeof str !== "string") return "";
@@ -62,7 +61,6 @@ const math_tools = {
     },
 };
 
-// htttp_tools
 const htttp_tools = {
     async fetchAPI(url) {
         const nodefetch = require("node-fetch");
