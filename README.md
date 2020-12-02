@@ -2,6 +2,14 @@
 🍨🍦☕🥞 A Discord.js Bot 
 that does a different things 🏔🌸⛩🎌🚅 
 
+## Features:
+- **Case *inSenSiTIVE***
+- 🖥⌨ Gives the link to Github source code (aka this page)
+- 💂‍♂️🙏 Gives Valorant "Bravery" challenges
+- ⏳✔ Implemented: Re-roll that doesn't include duplicates
+- 🍞🙏 Recite bible verses
+- 📆⌚ Tells you time and date, based on country
+
 ### Usage:
 > Type "prefix" <command> <sub_command> in your discord chatbox
 
@@ -31,14 +39,6 @@ that does a different things 🏔🌸⛩🎌🚅
 > `"prefix brave"` 
 - Need a *better* weapon? Be brave and **roll** for a `single round`. 
 - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
-
-## Features:
-- **Case *inSenSiTIVE***
-- 🖥⌨ Gives the link to Github source code (aka this page)
-- 💂‍♂️🙏 Gives Valorant "Bravery" challenges
-- ⏳✔ Implemented: Re-roll that doesn't include duplicates
-- 🍞🙏 Recite bible verses
-- 📆⌚ Tells you time and date, based on country
 
 # How to install:
 1. Install npm on your computer from [Node.JS](https://nodejs.org/en/)
