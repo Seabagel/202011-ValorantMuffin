@@ -5,31 +5,31 @@ that does a different things 🏔🌸⛩🎌🚅
 ### Usage:
 > Type "prefix" <command> <sub_command> in your discord chatbox
 
-1. 🐙 **-help**
-   > `"prefix -help"` responds by giving a list of all available commands,
-   - Every command will also give you a link to the github page, at the bottom of each response
+#### 🐙 **-help**
+> `"prefix -help"` responds by giving a list of all available commands,
+- Every command will also give you a link to the github page, at the bottom of each response
 
-2. 🎲🥞 **-roll**
-   > `"prefix roll"` 
-   - Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
-   - 3 free and 3 contract Valorant `Agents`
-   - 3 different `primary` weapons 
-   - 2 different `sidearms` (pistols)
+### /[VALORANT CHALLENGES/]
+#### 🎲🥞 **-roll** 
+> `"prefix roll"` 
+- Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
+- 3 free and 3 contract Valorant `Agents`
+- 3 different `primary` weapons 
+- 2 different `sidearms` (pistols)
+#### 🚒🔥 **-brave**
+> `"prefix brave"` 
+- Need a *better* weapon? Be brave and **roll** for a `single round`. 
+- You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
 
-3. 🚒🔥 **-brave**
-   > `"prefix brave"` 
-   - Need a *better* weapon? Be brave and **roll** for a `single round`. 
-   - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
+#### 📆 **-time**
+> `"prefix time" <name_of_country/city/state>`
+- "pudding -time Japan" gives you the time in Japan's capital city, Tokyo
+- "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
+- "pudding -time Iowa" gives you the time in Iowa's capital city
 
-4. 📆 **-time**
-   > `"prefix time" <name_of_country/city/state>`
-   - "pudding -time Japan" gives you the time in Japan's capital city, Tokyo
-   - "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
-   - "pudding -time Iowa" gives you the time in Iowa's capital city
-
-5. ☦ **-preach**
-   > `"prefix preach" <name_of_country/city/state>`
-   - sends a random bible verse, plus the bookname, chapter, and number
+#### ☦ **-preach**
+> `"prefix preach" <name_of_country/city/state>`
+- sends a random bible verse, plus the bookname, chapter, and number
 
 ## Features:
 - **Case *inSenSiTIVE***
