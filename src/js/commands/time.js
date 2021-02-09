@@ -7,7 +7,7 @@ module.exports = {
 
 const timeCommand = async (userInput, args, thisName) => {
   // Dependencies
-  const { MessageEmbed, ReactionUserManager } = require("discord.js");
+  const { MessageEmbed } = require("discord.js");
   const cheerio = require("cheerio");
   const {
     message_tools,
@@ -20,11 +20,11 @@ const timeCommand = async (userInput, args, thisName) => {
 
   try {
     // Don't let people use time bot to look up pants
-    const wordList = ["pant", "trouser", "short", "jean", "legging", "brief"];
-    if (text_tools.containsWord(args[0], wordList)) {
-      message_tools.catchError(userInput, "Pants Error");
-      return;
-    }
+    // const wordList = ["pant", "trouser", "short", "jean", "legging", "brief"];
+    // if (text_tools.containsWord(args[0], wordList)) {
+    //   message_tools.catchError(userInput, "Pants Error");
+    //   return;
+    // }
 
     // Join args for URL
     let argsURL = args.join("+");
@@ -72,30 +72,40 @@ const timeCommand = async (userInput, args, thisName) => {
       const resDate = res[0].dateTimezone[0];
       const resPicture = res[1].picture;
 
+      // Different greetings based on Time of day
+      let thumbnailPic = images.thumbnails.timeMorning;
+      // Update thumbnail AFTER greetings hasd been called
+      let greetings = () => {
+        if (resHour.endsWith("PM")) {
+          const thisHour = parseInt(resHour.split(":")[0]);
+          if (thisHour >= 8 && thisHour <= 11) {
+            thumbnailPic = images.thumbnails.timeNight;
+            return "at Night";
+          } else if (thisHour >= 5 && thisHour <= 7) {
+            thumbnailPic = images.thumbnails.timeEvening;
+            return "in the Evening";
+          } else {
+            thumbnailPic = images.thumbnails.timeAfternoon;
+            return "in the Afternoon";
+          }
+        } else {
+          return "in the Morning";
+        }
+      };
+
       // Assemble embedded message
       let embedded = new MessageEmbed()
         .setColor("dedede")
         .setAuthor("Google Search", images.googleAvatar)
-        .setTitle(argsString)
-        .addFields(
-          {
-            name: resHour,
-            value: resLocation,
-          },
-          {
-            name: "Date:",
-            value: resDate,
-          }
-        )
+        .setTitle(resLocation)
+        .addFields({
+          name: `${resHour} ${greetings()}.`,
+          value: resDate,
+        })
+        .setThumbnail(thumbnailPic)
         .setImage(resPicture)
         .addField(texts.empty, message_tools.github(thisName))
         .setFooter(texts.footerText, images.githubIcon);
-
-      // Set different thumbnail based on Time-of-day
-      const isNight = resHour.endsWith("PM");
-      !isNight
-        ? embedded.setThumbnail(images.thumbnails.timeDayCommand)
-        : embedded.setThumbnail(images.thumbnails.timeNightCommand);
 
       // Send message
       userInput.channel.send(embedded);
