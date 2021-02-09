@@ -50,7 +50,7 @@ A Discord.js Bot that does a different things
    - Need a *better* weapon? Be brave and **roll** for a `single round`. 
    - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
 
-# How to install:
+# 🧰💻 How to install:
 1. Install npm on your computer from [Node.JS](https://nodejs.org/en/)
 2. Install [Git](https://git-scm.com/)
 3. Open in a CLI like Powershell, cmd, or Bash,
@@ -66,7 +66,7 @@ A Discord.js Bot that does a different things
    - Give yourself a new prefix, in `prefix.json`, the default is `nega`
 8. Open the root folder again, and run `node .` or `npm start`
 
-# How to update:
+# ♻ How to update:
 1. Once deployed, we can update it through `git`
 2. Reboot your device/server `sudo reboot` or switch off the machine
    - Your bot will shut down, after rebooting, we have to start it again
