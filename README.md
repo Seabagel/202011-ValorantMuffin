@@ -4,7 +4,8 @@ A Discord.js Bot that does a different things
 
 ## TODO:
 - [x] Update the documentation for Pants and Time of day
-- [x] Add how to update it once deployed in RasberryPi
+- [x] Add how to update it, once it's been deployed in RasberryPi
+- [ ] Add how to deploy it, and keep the process running on Linux
 
 ## Features:
    - **Case *inSenSiTIVE***
