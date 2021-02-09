@@ -1,6 +1,10 @@
-# Mama-Slimes Discord.js bot
+# Mama-Slimes Discord.js bot (v.1.2)
 ### 🍨🍦☕🥞🏔🌸⛩🎌🚅 
 A Discord.js Bot that does a different things
+
+## TODO:
+- [x] Update the documentation for Pants and Time of day
+- [x] Add how to update it once deployed in RasberryPi
 
 ## Features:
    - **Case *inSenSiTIVE***
@@ -20,9 +24,15 @@ A Discord.js Bot that does a different things
 
    ### 📆 **-time**
    > `"prefix time" <name_of_country/city/state>`
+   - Gives the time of day, time, and date in a location
+   - Can also be abused to look up pants
    - "pudding -time Japan" gives you the time in Japan's capital city, Tokyo
    - "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
    - "pudding -time Iowa" gives you the time in Iowa's capital city
+
+### 👖🩳 **-pants**
+   > `"prefix pants"`
+   - Gives you a random picture of pants
 
    ### ☦ **-preach**
    > `"prefix preach" <name_of_country/city/state>`
@@ -53,4 +63,23 @@ A Discord.js Bot that does a different things
 7. After setting up an App on Discord Developer Portal, 
    - Go to the root folder of the repository, and paste your Token inside `config/config.json`
    - There's an example file inside the config folder, rename it to `config.json`
+   - Give yourself a new prefix, in `prefix.json`, the default is `nega`
 8. Open the root folder again, and run `node .` or `npm start`
+
+# How to update:
+1. Once deployed, we can update it through `git`
+2. Reboot your device/server `sudo reboot` or switch off the machine
+   - Your bot will shut down, after rebooting, we have to start it again
+3. Then after rebooting, SSH to your device, then `cd ` to the MamaSlimes folder
+   - Then, we gotta update the code from GitHub 
+4. `git fetch`, then `git pull`
+   - Fetch updates, then pulls the update to your folder
+5. `npm i`
+   - Install any updates to the node modules
+6. `npm run start &`
+   - Start the App again, and sends it to the background
+   - Double enter to jump outside the logs
+7. `disown -h`
+   - Disown the process, and let Linux manage it
+8. `exit`
+   - Properly exit from your SSH
