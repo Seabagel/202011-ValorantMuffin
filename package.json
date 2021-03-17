@@ -1,6 +1,6 @@
 {
   "name": "MamaSlimes",
-  "version": "1.2",
+  "version": "1.2.0",
   "description": "A Discord.js Bot that does a different things",
   "main": "src/js/index.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "cheerio": "^1.0.0-rc.3",
     "discord.js": "^12.5.1",
     "node-fetch": "^2.6.1",
+    "request": "^2.88.2",
     "request-promise": "^4.2.6"
   }
 }
