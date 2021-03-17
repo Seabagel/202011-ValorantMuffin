@@ -59,14 +59,15 @@ A Discord.js Bot that does a different things
    - Clone this repository using `git clone <this repository's link>`
 4. Still in your CLI, change directory to the cloned repository's folder `cd <folder_name>`
 5. Use `npm i` to install Node.js dependencies 
-6. Register a Discord Developer account, and obtain a Token to host the bot 
+6. One of the dependencies is deprecated, install it with `npm install request --save`
+7. Register a Discord Developer account, and obtain a Token to host the bot 
    - [Code Your Own Discord Bot - Basics (2020)](https://www.youtube.com/watch?reload=9&v=j_sD9udZnCk)
    - [Discord Developer Portal](https://discord.com/login?redirect_to=%2Fdevelopers%2Fapplications)
-7. After setting up an App on Discord Developer Portal, 
+8. After setting up an App on Discord Developer Portal, 
    - Go to the root folder of the repository, and paste your Token inside `config/config.json`
    - There's an example file inside the config folder, rename it to `config.json`
    - Give yourself a new prefix, in `prefix.json`, the default is `nega`
-8. Open the root folder again, and run `node .` or `npm start`
+9. Open the root folder again, and run `node .` or `npm start`
 
 # ♻ How to update:
 1. Once deployed, we can update it through `git`
