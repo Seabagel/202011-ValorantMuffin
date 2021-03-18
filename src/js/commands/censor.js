@@ -9,6 +9,8 @@ const braveCommand = (userInput, thisName) => {
     // Dependencies
     const { MessageEmbed } = require("discord.js");
     const { message_tools} = require("../tools");
+
+    // Use messageID to delete message
     try {
         // Assemble embedded message
         const embedded = new MessageEmbed()
