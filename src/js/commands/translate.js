@@ -20,6 +20,7 @@ const translateCommand = async (userInput, thisName) => {
   // I'll put in the help section the codes for English, Chinese, Vietnamese, Spanish, Japanese, and French
   // mama translate en ケックル
   // mama translate vn fuck your mother
+  // Put language codes in JSON helper
   try {
     let result = await translate("hello world", { to: "es" });
     userInput.channel.send(result);
