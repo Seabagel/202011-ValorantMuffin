@@ -19,10 +19,15 @@ const translateCommand = async (userInput, args, thisName) => {
   try {
     // Translate the text (fromLanguage is Auto-detected)
     // http://www.lingoes.net/en/translator/langcode.html
+    let fromLanguage = args.shift();
     let toLanguage = args.shift();
     let sourceTexts = text_tools.capitalize(args.join(" "));
-    let result = await translate(sourceTexts, { to: toLanguage });
+    let result = await translate(sourceTexts, { from: fromLanguage, to: toLanguage });
 
+    console.log("args:");
+    console.log(fromLanguage);
+    console.log(toLanguage);
+    console.log(sourceTexts);
     // Assemble embedded message
     let embedded = new MessageEmbed()
       .setColor("dedede")
