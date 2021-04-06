@@ -19,7 +19,7 @@ A Discord.js Bot that does a different things
    ### Usage:
    > Type "prefix" <command> <sub_command> in your discord chatbox
 
-## General Commands
+# General Commands
    ### 🐙 **-help**
    > `"prefix -help"` responds by giving a list of all available commands,
    - Every command will also give you a link to the github page, at the bottom of each response
