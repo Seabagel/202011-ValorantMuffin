@@ -16,9 +16,9 @@ const pantsCommand = async (userInput, thisName) => {
   try {
     // Static link to search engines
     let picURL = {
-      uri: `https://results.dogpile.com/serp?q=${math_tools.randArrayValue(
+      uri: `https://results.dogpile.com/serp?qc=images&q=${math_tools.randArrayValue(
         pants.pantsType
-      )}&page=${1 + math_tools.randomIntEx(4)}&sc=YPgyHRjAO7ux00`,
+      )}&page=${1 + math_tools.randomIntEx(4)}&sc=ceHa2ujrzSqX00`,
       method: "GET",
       headers: {
         Accept: "text/html",
