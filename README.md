@@ -17,7 +17,6 @@ A Discord.js Bot that does a different things
    - 📆⌚ Tells you time and date, based on country/city/state
 
    ### Usage:
-   > Type "prefix" <command> <sub_command> in your discord chatbox
 
 # 🧰💻 How to install:
 1. Install npm on your computer from [Node.JS](https://nodejs.org/en/)
