@@ -17,6 +17,7 @@ A Discord.js Bot that does a different things
    - 📆⌚ Tells you time and date, based on country/city/state
 
    ### Usage:
+   - See [list of All Commands](https://github.com/Seabagel/Discord-MamaSlimes/blob/main/HELP.md)
 
 # 🧰💻 How to install:
 1. Install npm on your computer from [Node.JS](https://nodejs.org/en/)
