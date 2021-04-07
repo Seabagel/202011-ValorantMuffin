@@ -11,42 +11,15 @@ const helpCommand = (userInput, thisName) => {
     const { message_tools } = require("../tools");
     // Data
     const { texts, images } = require("../JSON_helper");
-    const { prefix } = require("../../../config/prefix.json");
 
     // Assemble embedded message
     try {
         const embedded = new MessageEmbed()
             .setColor(0x0099ff)
-            .setTitle("Commands:")
-            .setDescription(`\`${prefix} <command>\` <arguments>`)
-            .setThumbnail(images.helpThumbnail)
-            .addFields(
-                {
-                    name: `\`${prefix} help\``,
-                    value:
-                        "What you're seeing right now, click the Command: <link> to see the github link",
-                },
-                {
-                    name: `\`${prefix} time\` <name_of_country/city/state>`,
-                    value:
-                        "Tells what time it is in **country/city/state**, plus a small info from wikipedia ",
-                },
-                {
-                    name: `\`${prefix} preach\``,
-                    value: "Pudding reads a bible verse",
-                },
-                {
-                    name: `\`${prefix} roll\``,
-                    value:
-                        "Rolls a set of *random* `Agents` and `Weapons` to use for the entire match\n - 3 free and 3 contract Valorant `Agents` \n - 3 different `primary` weapons\n - 2 different `sidearms` (pistols)",
-                },
-                {
-                    name: `\`${prefix} brave\``,
-                    value:
-                        "Need a *better* `weapon`? Be brave and **roll** for a `single round`. You *might* get a different weapon, but you'll have to use it **until the round ends**",
-                }
-            )
+            .setTitle("Github")
+            .addField("List of All Commands:", " See all available commands and description of what they do, below:")
             .addField(texts.empty, message_tools.github(thisName))
+            .setThumbnail(images.helpThumbnail)
             .setFooter(texts.footerText, images.githubIcon);
 
         // Send message
