@@ -30,7 +30,7 @@ const degenCommand = async (userInput, thisName, args) => {
                 // document.getElementsByClassName("title")[0].innerText
                 let bookTitle = $("span.pretty").eq(0).text();
 
-                console.log(`${imageThumb}, ${tagNumber}, ${bookTitle}`);
+                // console.log(`${imageThumb}, ${tagNumber}, ${bookTitle}`);
 
                 return { imageThumb, tagNumber, bookTitle };
             })
