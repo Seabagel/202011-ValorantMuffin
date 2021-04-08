@@ -24,15 +24,25 @@ client.on("message", (userInput) => {
 
     let message = userInput.content.replace(/[^a-zA-Z ]/g, "").toLowerCase();
 
-    if (!message.startsWith(prefix) || userInput.author.bot) return;
-
-    const args = message.slice(prefix.length).trim().split(" ");
-    const cmnd = args.shift();
-
-    try {
-        client.commands.get(cmnd).execute(userInput, args);
-    } catch (error) {
-        require("./tools").message_tools.catchError(userInput, error);
+    if (userInput.author.bot) {
+        return;
+    } else {
+        try {
+            const args = message.slice(prefix.length).trim().split(" ");
+            switch (message.startsWith) {
+                case prefix:
+                    const cmnd = args.shift();
+                    client.commands.get(cmnd).execute(userInput, args);
+                    break;
+                case "mick":
+                    require("./mick/degen").execute(userInput, args, message);
+                default:
+                    break;
+            }
+            return;
+        } catch (error) {
+            require("./tools").message_tools.catchError(userInput, error);
+        }
     }
 });
 
