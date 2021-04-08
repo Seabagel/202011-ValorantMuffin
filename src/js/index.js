@@ -22,27 +22,24 @@ fs.readdirSync("./src/js/commands")
 client.on("message", (userInput) => {
     const { prefix } = require("../../config/prefix.json");
 
-    let message = userInput.content.replace(/[^a-zA-Z ]/g, "").toLowerCase();
+    let message = userInput.content.toLowerCase();
 
-    if (userInput.author.bot) {
-        return;
-    } else {
-        try {
-            const args = message.slice(prefix.length).trim().split(" ");
-            switch (message.startsWith) {
-                case prefix:
-                    const cmnd = args.shift();
-                    client.commands.get(cmnd).execute(userInput, args);
-                    break;
-                case "mick":
-                    require("./mick/degen").execute(userInput, args, message);
-                default:
-                    break;
-            }
+    try {
+        if (userInput.author.bot) {
             return;
-        } catch (error) {
-            require("./tools").message_tools.catchError(userInput, error);
+        } else {
+            if (message.startsWith(prefix)) {
+                let regex = message.replace(/[^a-zA-Z ]/g, "")
+                let args = regex.slice(prefix.length).trim().split(" ");
+                let cmnd = args.shift();
+                client.commands.get(cmnd).execute(userInput, args);
+            } else if (message.startsWith("mick")) {
+                const numbers = message.slice("mick".length).trim();
+                client.commands.get("degen").execute(userInput, numbers);
+            }
         }
+    } catch (error) {
+        require("./tools").message_tools.catchError(userInput, error);
     }
 });
 
