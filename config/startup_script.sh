@@ -1,3 +1,4 @@
+#!/bin/sh
 cd github
 cd Discord-MamaSlimes
 git fetch
