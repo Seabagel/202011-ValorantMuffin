@@ -19,7 +19,7 @@ fs.readdirSync("./src/js/commands")
     });
 
 // Activate on message event
-client.on("message", (userInput) => {
+client.on("message", async (userInput) => {
     const { prefix } = require("../../config/prefix.json");
 
     let message = userInput.content.toLowerCase();
@@ -29,13 +29,13 @@ client.on("message", (userInput) => {
             return;
         } else {
             if (message.startsWith(prefix)) {
-                let regex = message.replace(/[^a-zA-Z ]/g, "")
+                let regex = message.replace(/[^a-zA-Z ]/g, "");
                 let args = regex.slice(prefix.length).trim().split(" ");
                 let cmnd = args.shift();
                 client.commands.get(cmnd).execute(userInput, args);
-            } else if (message.startsWith("mick")) {
-                const numbers = message.slice("mick".length).trim();
-                client.commands.get("degen").execute(userInput, numbers);
+            } else if (message.startsWith("coom")) {
+                const numbers = message.slice("coom".length).trim();
+                client.commands.get("degen").execute(userInput, client, numbers);
             }
         }
     } catch (error) {
