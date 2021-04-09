@@ -1,19 +1,14 @@
 #!/bin/sh
 
-## Variables
-git_dir="$HOME/github/Discord-MamaSlimes/"
-script_dir="$HOME/github/Discord-MamaSlimes/config/startup_script.sh"
-modsh_dir="/etc/init.d/startup_script.sh"
-
 ## Update repo
-cd git_dir
+cd $HOME/github/Discord-MamaSlimes/
 git fetch
 git pull
 
 ## Update the startup script
-sudo cp script_dir modsh_dir
-sudo chmod +x modsh_dir
-sudo update-rc.d modsh_dir defaults
+sudo cp $HOME/github/Discord-MamaSlimes/config/startup_script.sh /etc/init.d/startup_script.sh
+sudo chmod +x /etc/init.d/startup_script.sh
+sudo update-rc.d startup_script.sh defaults
 
 ## Start Nodejs App
 npm i
@@ -27,4 +22,4 @@ exit
 
 ## Startup Chrontab
 # crontab -u pi -e
-# @reboot sh $HOME/github/startup_script.sh
+# @reboot sh /etc/init.d/startup_script.sh
