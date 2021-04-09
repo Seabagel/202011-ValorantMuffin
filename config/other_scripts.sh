@@ -1,17 +1,10 @@
-#!/bin/sh
-
 # https://raspberrypi.stackexchange.com/questions/15475/run-bash-script-on-startup
+# https://www.youtube.com/watch?v=zRXauWUumSI
+# https://askubuntu.com/questions/909024/how-to-run-script-in-rc-local
 # sh $HOME/startup_script.sh
 
-## Update repo
-cd $HOME/github/Discord-MamaSlimes/
-git fetch
-git pull
-## Start Nodejs App
-npm i
-npm run start &
-disown -h
-exit
+# disown -h
+# exit
 
 ## Uncommit / Flush files
 # rm -rf *
