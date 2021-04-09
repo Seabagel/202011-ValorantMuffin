@@ -1,9 +1,8 @@
-rm -rf *
-git clone https://github.com/Seabagel/MamaSlimes.git
-cd MamaSlimes
-git pull
+cd github
+cd Discord-MamaSlimes
 git fetch
+git pull
 npm i
 npm run start &
 disown -h
-exit
+# exit
