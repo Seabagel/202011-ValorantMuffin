@@ -7,9 +7,9 @@ client.once("ready", (ready) => {
     const ready_msg = `[READY] \<MamaSlimes@${new Date().toUTCString()}\>`;
     console.log(ready_msg);
     client.channels.fetch("729447818791485442").then(e => e.send(ready_msg))
-    client.channels.fetch("785813207389306890").then(e => e.send(ready_msg))
-    client.channels.fetch("694920058882883624").then(e => e.send(ready_msg))
-    client.channels.fetch("808047234242445342").then(e => e.send(ready_msg))
+    // client.channels.fetch("785813207389306890").then(e => e.send(ready_msg))
+    // client.channels.fetch("694920058882883624").then(e => e.send(ready_msg))
+    // client.channels.fetch("808047234242445342").then(e => e.send(ready_msg))
     client.user.setActivity("mama -commands ?args", { type: "LISTENING" });
 });
 
