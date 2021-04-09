@@ -1,13 +1,19 @@
 #!/bin/sh
 
+## Variables
+git_dir="$HOME/github/Discord-MamaSlimes/"
+script_dir="$HOME/github/Discord-MamaSlimes/config/startup_script.sh"
+modsh_dir="/etc/init.d/startup_script.sh"
+
 ## Update repo
-cd $HOME/github/Discord-MamaSlimes/
+cd git_dir
 git fetch
 git pull
 
 ## Update the startup script
-sudo cp $HOME/github/Discord-MamaSlimes/config/startup_script.sh $HOME/github/startup_script.sh
-sudo chmod +x $HOME/github/startup_script.sh
+sudo cp script_dir modsh_dir
+sudo chmod +x modsh_dir
+sudo update-rc.d modsh_dir defaults
 
 ## Start Nodejs App
 npm i
