@@ -56,8 +56,6 @@ const pantsCommand = async (userInput, thisName) => {
             userInput.channel.send(embedded);
             message_tools.logCommand(userInput, thisName);
         });
-
-        await Promise.all().then();
     } catch (error) {
         message_tools.catchError(userInput, error);
     }
