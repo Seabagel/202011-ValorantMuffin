@@ -9,8 +9,11 @@ exit
 
 # rm -rf *
 # git reset --hard
-# chmod +x $HOME/github/Discord-MamaSlimes/config/startup_script.sh
-# sh $HOME/github/Discord-MamaSlimes/config/startup_script.sh
+
+# cp $HOME/github/Discord-MamaSlimes/config/startup_script.sh $HOME/github/startup_script.sh
+# chmod +x $HOME/github/startup_script.sh
+# sh $HOME/github/startup_script.sh
+
 # crontab -u pi -e
-# @reboot sh $HOME/github/Discord-MamaSlimes/config/startup_script.sh
+# @reboot sh $HOME/github/startup_script.sh
 # exit
