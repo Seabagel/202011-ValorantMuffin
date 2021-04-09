@@ -3,8 +3,10 @@ const { Client, Collection } = require("discord.js");
 
 // Ready message
 const client = new Client();
-client.once("ready", () => {
-    console.log("Ready!");
+client.once("ready", (ready) => {
+    const ready_msg = `[${READY}] \<${MamaSlimes}@${new Date().toUTCString()}\>`;
+    console.log(ready_msg);
+    ready.channel.send(ready_msg);
     client.user.setActivity("mama -commands <args?", { type: "LISTENING" });
 });
 
@@ -35,7 +37,9 @@ client.on("message", async (userInput) => {
                 client.commands.get(cmnd).execute(userInput, args);
             } else if (message.startsWith("coom")) {
                 const numbers = message.slice("coom".length).trim();
-                client.commands.get("degen").execute(userInput, client, numbers);
+                client.commands
+                    .get("degen")
+                    .execute(userInput, client, numbers);
             }
         }
     } catch (error) {
