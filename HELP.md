@@ -35,7 +35,8 @@
    - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
 
 # ✨🥰 Special Commands
-   ### 🍆💦 Coom
+   ### 🍆💦 **-Coom**
+   > `"coom"`
    - doesn't require any Mama prefix,
-   - Coom, then input any 1-5 digit number
+   - type `Coom`, then input any 1-5 digit number
    - Mama slime bot will message you a link
