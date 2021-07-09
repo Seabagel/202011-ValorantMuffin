@@ -15,10 +15,17 @@
 ## Finally, you must reboot your system using $ sudo reboot
 # When you starts up the computer your script is completely work.
 
+# Sudo poweroff
+
 cd $HOME/github/Discord-MamaSlimes/
 
+git fetch
 git pull
 
 npm i
 
 npm start &
+
+disown -h
+
+exit

@@ -14,7 +14,7 @@
    - "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
    - "pudding -time Iowa" gives you the time in Iowa's capital city
 
-### 👖🩳 **-pants**
+   ### 👖🩳 **-pants**
    > `"mama pants"`
    - Gives you a random picture of pants
 
@@ -22,7 +22,7 @@
    > `"mama preach" <name_of_country/city/state>`
    - sends a random bible verse, plus the bookname, chapter, and number
 
-### 👮‍♂️💂‍♂️ Valorant Bravery Commands
+# 👮‍♂️💂‍♂️ Valorant Bravery Commands
    ### 🎲🥞 **-roll** 
    > `"mama roll"` 
    - Rolls a set of *random* `Agents` and `Weapons` to use <ins>for the entire match</ins>
@@ -33,3 +33,9 @@
    > `"mama brave"` 
    - Need a *better* weapon? Be brave and **roll** for a `single round`. 
    - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
+
+# ✨🥰 Special Commands
+   ### 🍆💦 Coom
+   - doesn't require any Mama prefix,
+   - Coom, then input any 1-5 digit number
+   - Mama slime bot will message you a link
