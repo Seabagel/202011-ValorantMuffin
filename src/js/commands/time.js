@@ -58,24 +58,25 @@ const timeCommand = async (userInput, args, thisName) => {
             .catch((err) => message_tools.catchError(userInput));
 
         // Search result and grab a random picture
-        let pictureWebpage = http_tools
-            .requestPage(picURL)
-            .then((response) => {
-                // Returns a Promise of picture URL
-                let urls = response(".image a.link");
-                let picture = urls
-                    .eq(math_tools.randomIntEx(urls.length))
-                    .attr("href");
-                if (!urls.length) return console.log("Can't get pictures");
-                return { picture };
-            })
-            .catch((err) => message_tools.catchError(userInput));
+        // let pictureWebpage = http_tools
+        //     .requestPage(picURL)
+        //     .then((response) => {
+        //         // Returns a Promise of picture URL
+        //         let urls = response(".image a.link");
+        //         let picture = urls
+        //             .eq(math_tools.randomIntEx(urls.length))
+        //             .attr("href");
+        //         if (!urls.length) return console.log("Can't get pictures");
+        //         return { picture };
+        //     })
+        //     .catch((err) => message_tools.catchError(userInput));
 
-        await Promise.all([timeWebpage, pictureWebpage]).then((res) => {
+        // await Promise.all([timeWebpage, pictureWebpage]).then((res) => {
+        await Promise.all([timeWebpage]).then((res) => {
             const resHour = res[0].time;
             const resLocation = res[0].dateTimezone[1];
             const resDate = res[0].dateTimezone[0];
-            const resPicture = res[1].picture;
+            // const resPicture = res[1].picture;
 
             // Different greetings based on Time of day
             let thumbnailPic = images.thumbnails.timeMorning;
@@ -108,7 +109,7 @@ const timeCommand = async (userInput, args, thisName) => {
                     value: resDate,
                 })
                 .setThumbnail(thumbnailPic)
-                .setImage(resPicture)
+                // .setImage(resPicture)
                 .addField(texts.empty, message_tools.github(thisName))
                 .setFooter(texts.footerText, images.githubIcon);
 
