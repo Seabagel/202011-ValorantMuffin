@@ -29,7 +29,8 @@ A Discord.js Bot that does a different things
 6. One of the dependencies is deprecated, install it with `npm install request --save`
 7. Register a Discord Developer account, and obtain a Token to host the bot 
    - [Code Your Own Discord Bot - Basics (2020)](https://www.youtube.com/watch?reload=9&v=j_sD9udZnCk)
-   - [Discord Developer Portal](https://discord.com/login?redirect_to=%2Fdevelopers%2Fapplications)
+   - [Discord Developer Portal](https://discord.com/developers/applications)
+   - [Discord Developer Docs](https://discord.com/developers/docs/intro)
 8. After setting up an App on Discord Developer Portal, 
    - Go to the root folder of the repository, and paste your Token inside `config/config.json`
    - There's an example file inside the config folder, rename it to `config.json`
