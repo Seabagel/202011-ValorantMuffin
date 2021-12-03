@@ -32,8 +32,9 @@ A Discord.js Bot that does a different things
    - [Discord Developer Portal](https://discord.com/developers/applications)
    - [Discord Developer Docs](https://discord.com/developers/docs/intro)
 8. After setting up an App on Discord Developer Portal, 
-   - Go to the root folder of the repository, and paste your Token inside `config/config.json`
-   - There's an example file inside the config folder, rename it to `config.json`
+   - from the [Discord Developer Portal](https://discord.com/developers/applications), find your App, go to the Bot page, and find the Token
+   - Go to the root folder of the repository, config folder, and paste your Token inside `config/config.json`
+   - There's an example file inside the config folder, make a copy of it, and rename it to `config.json`
    - Give yourself a new prefix, in `prefix.json`, the default is `nega`
 9. Open the root folder again, and run `node .` or `npm start`
 
