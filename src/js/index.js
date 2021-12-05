@@ -38,11 +38,6 @@ client.on("message", async (userInput) => {
                 let args = regex.slice(prefix.length).trim().split(" ");
                 let cmnd = args.shift();
                 client.commands.get(cmnd).execute(userInput, args);
-            } else if (message.startsWith("coom")) {
-                const numbers = message.slice("coom".length).trim().substring(0, 6);
-                client.commands
-                    .get("degen")
-                    .execute(userInput, client, numbers);
             }
         }
     } catch (error) {
