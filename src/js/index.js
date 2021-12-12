@@ -38,6 +38,10 @@ client.on("message", async (userInput) => {
                 let args = regex.slice(prefix.length).trim().split(" ");
                 let cmnd = args.shift();
                 client.commands.get(cmnd).execute(userInput, args);
+                console.log(message)
+                console.log(message.channel)
+                console.log(message.channel.messages.fetch("729447818791485442-919414184977002556"))
+                console.log(message.channel.fetchMessage("729447818791485442-919414184977002556"))
             }
         }
     } catch (error) {

@@ -1,6 +1,6 @@
 module.exports = {
     name: "censor",
-    execute(userInput, args) {
+    execute(userInput) {
         braveCommand(userInput, this.name);
     },
 };

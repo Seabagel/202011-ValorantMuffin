@@ -1,27 +1,30 @@
 module.exports = {
-    name: "help",
-    execute(userInput) {
-        helpCommand(userInput, this.name);
+    name: "template",
+    execute(userInput, args) {
+        archiveCommand(userInput, this.name);
     },
 };
 
-const helpCommand = (userInput, thisName) => {
+const archiveCommand = async (userInput, args, thisName) => {
     // Dependencies
     const { MessageEmbed } = require("discord.js");
-    const { message_tools } = require("../tools");
+    const { message_tools, archive_api } = require("../tools");
     // Data
     const { texts, images } = require("../JSON_helper");
 
     // Assemble embedded message
     try {
         const embedded = new MessageEmbed()
-            .setColor(0x0099ff)
-            .setTitle("Github")
-            .addField("List of All Commands:", " See all available commands and description of what they do, below:")
+            .setColor("ff4655")
+            .setAuthor(
+                userInput.author.username,
+                userInput.author.displayAvatarURL({ dynamic: true })
+            )
+            .setTitle(`Title`)
+            .setDescription(`Description`)
             .addField(texts.empty, message_tools.github(thisName))
-            .setThumbnail(images.helpThumbnail)
             .setFooter(texts.footerText, images.githubIcon);
-
+            
         // Send message
         userInput.channel.send(embedded);
         message_tools.logCommand(userInput, thisName);

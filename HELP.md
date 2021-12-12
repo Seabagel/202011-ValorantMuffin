@@ -14,12 +14,8 @@
    - "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
    - "pudding -time Iowa" gives you the time in Iowa's capital city
 
-   ### 👖🩳 **-pants**
-   > `"mama pants"`
-   - Gives you a random picture of pants
-
    ### ☦ **-preach**
-   > `"mama preach" <name_of_country/city/state>`
+   > `"mama preach"`
    - sends a random bible verse, plus the bookname, chapter, and number
 
 # 👮‍♂️💂‍♂️ Valorant Bravery Commands
@@ -34,9 +30,17 @@
    - Need a *better* weapon? Be brave and **roll** for a `single round`. 
    - You *might* get a different weapon, but you'll have to use it <ins>until the round ends</ins>
 
-# ✨🥰 Special Commands
-   ### 🍆💦 **-Coom**
-   > `"coom"`
-   - doesn't require any Mama prefix,
-   - type `Coom`, then input any 1-5 digit number
-   - Mama slime bot will message you a link
+# ✨🥰 Archived Commands
+   ### 🍆💦 **-hentai**
+   > `"mama hentai <integer from 1-99999>"`
+   - Something changed in the target site, and broke fetch() 
+
+   ### 🗺✈️ **-translate**
+   > `"mama translate <enter foreign text>"`
+   - API Key from Google was lost because I deleted the account
+   - Just need to create a new one
+
+   ### 👖🩳 **-pants**
+   > `"mama pants"`
+   - Gives you a random picture of pants
+   - Dogpile image changed something, and broke fetch()

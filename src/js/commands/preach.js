@@ -1,6 +1,6 @@
 module.exports = {
     name: "preach",
-    execute(userInput, args) {
+    execute(userInput) {
         preachCommand(userInput, this.name);
     },
 };
