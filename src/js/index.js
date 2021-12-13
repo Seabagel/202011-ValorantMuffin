@@ -10,7 +10,14 @@ client.once("ready", (ready) => {
   //   client.channels.fetch("729447818791485442").then((e) => e.send(ready_msg));
 
   // Server
-  client.channels.fetch("694920058882883624").then((e) => e.send(ready_msg));
+  //   client.channels.fetch("694920058882883624").then((e) => e.send(ready_msg));
+  client.channels
+    .fetch("694920058882883624")
+    .then((e) => e.messages.fetch())
+    .then((e) => console.log(e));
+
+  //   console.log(client.channels.cache.get("694920058882883624").messages);
+  //   client.channels.cache.get("694920058882883624").messages.fetch("694920058882883624-919719788585054288").then((e) => console.log(e));
 
   client.user.setActivity("mama -commands ?args", { type: "LISTENING" });
 });
@@ -31,20 +38,19 @@ client.on("message", async (userInput) => {
 
   let message = userInput.content.toLowerCase();
 
+  //   fetchMessage("694920058882883624-919719788585054288").then((e) => console.log(e));
+
   try {
     if (userInput.author.bot) {
       return;
     } else {
       if (message.startsWith(prefix)) {
-        let regex = message.replace(/[^a-zA-Z ]/g, "");
-        let args = regex.slice(prefix.length).trim().split(" ");
+        // This regex removes symbols and numbers
+        // Will break hentai and archive commands
+        // let regex = message.replace(/[^a-zA-Z ]/g, "");
+        let args = message.slice(prefix.length).trim().split(" ");
         let cmnd = args.shift();
         client.commands.get(cmnd).execute(userInput, args);
-        const msg = await userInput.channel.messages.fetch(
-          "919441390738481232"
-        );
-        console.log(msg.author.username);
-        console.log(msg.createdAt);
       }
     }
   } catch (error) {
