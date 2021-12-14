@@ -15,10 +15,23 @@ const archiveCommand = async (userInput, args, thisName) => {
 
   // Assemble embedded message
   try {
-    // get message
+    // get message from Args
     const msgArg = args[0].trim().split("-").pop();
     const msg = await userInput.channel.messages.fetch(msgArg);
-    const msgTimestamp = new Date(msg.createdTimestamp).toUTCString();
+    // Get timestamp
+    const d = new Date(msg.createdTimestamp);
+    const days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    const msgTimestamp = `${
+      days[d.getDay()]
+    }, ${d.getMonth()}/${d.getDate()}/${d.getFullYear()}`;
 
     const embedded = new MessageEmbed()
       .setColor("7289da")
@@ -26,8 +39,9 @@ const archiveCommand = async (userInput, args, thisName) => {
         msg.author.username,
         msg.author.displayAvatarURL({ dynamic: true })
       )
-      .setTitle(`Archived #${msg.id} from ${msgTimestamp}`)
+      .setTitle(`Archived #${msg.id}`)
       .setDescription(msg.content)
+      .addField("Timestamp:", msgTimestamp)
       .addField(texts.empty, message_tools.github(thisName))
       .setFooter(texts.footerText, images.githubIcon);
 
@@ -45,7 +59,9 @@ const archiveCommand = async (userInput, args, thisName) => {
         dynamic: true,
       })}`
     )
-      .then((e) => console.log("Success"))
+      .then((e) =>
+        console.log("[archive] <STATUS: 201, CosmosDB entry created>")
+      )
       .catch((error) => console.log(error));
   } catch (error) {
     message_tools.catchError(userInput, error);

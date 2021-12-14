@@ -14,9 +14,14 @@
    - "pudding -time Jacksonville" gives you the time in Jacksonville, Florida
    - "pudding -time Iowa" gives you the time in Iowa's capital city
 
-   ### ☦ **-preach**
-   > `"mama preach"`
-   - sends a random bible verse, plus the bookname, chapter, and number
+   ### ☦ **-archive**
+   > `"mama archive" <discord message_id>(ex.12345-6789012345)`
+   - Sends the message through a REST API to be archived in a database
+   - The data is then can be displayed on a website
+
+### 📆 **-time**
+   > `"mama time" <name_of_country/city/state>`
+   - Gives the time of day, time, and date in a location
 
 # 👮‍♂️💂‍♂️ Valorant Bravery Commands
    ### 🎲🥞 **-roll** 
