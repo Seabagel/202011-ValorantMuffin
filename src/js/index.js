@@ -10,11 +10,13 @@ client.once("ready", (ready) => {
   //   client.channels.fetch("729447818791485442").then((e) => e.send(ready_msg));
 
   // Server
-  //   client.channels.fetch("694920058882883624").then((e) => e.send(ready_msg));
-  client.channels
-    .fetch("694920058882883624")
-    .then((e) => e.messages.fetch())
-    .then((e) => console.log(e));
+  client.channels.fetch("694920058882883624").then((e) => e.send(ready_msg));
+
+  // Fetching single message from Channel
+  //   client.channels
+  //     .fetch("694920058882883624")
+  //     .then((e) => e.messages.fetch())
+  //     .then(message => console.log(message.content))
 
   //   console.log(client.channels.cache.get("694920058882883624").messages);
   //   client.channels.cache.get("694920058882883624").messages.fetch("694920058882883624-919719788585054288").then((e) => console.log(e));
@@ -37,8 +39,6 @@ client.on("message", async (userInput) => {
   const { prefix } = require("../../config/prefix.json");
 
   let message = userInput.content.toLowerCase();
-
-  //   fetchMessage("694920058882883624-919719788585054288").then((e) => console.log(e));
 
   try {
     if (userInput.author.bot) {
