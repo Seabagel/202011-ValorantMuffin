@@ -79,18 +79,6 @@ const http_tools = {
         console.log(err);
       });
   },
-
-//   const archive_api = (message_id, username, msgbody, timestamp, pictureURL) => {
-//     await(
-//       await fetch(
-//         `${API_URL}/create_entry?message_id=${message_id}&username=${username}&msgbody=${msgbody}&timestamp=${timestamp}&pictureURL=${pictureURL}`
-//       )
-//     )
-//       .json()
-//       .then((res) => {
-//         this.messages.push(res);
-//       });
-//   },
 };
 
 module.exports = {
@@ -98,5 +86,4 @@ module.exports = {
   math_tools,
   http_tools,
   message_tools,
-//   archive_api,
 };

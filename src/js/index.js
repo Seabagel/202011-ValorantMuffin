@@ -1,5 +1,6 @@
 // Dependencies
 const { Client, Collection } = require("discord.js");
+require("dotenv").config();
 
 // Ready message
 const client = new Client();
